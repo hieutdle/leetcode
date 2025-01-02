@@ -1,20 +1,17 @@
-# Python Leetcode note
+#
+# @lc app=leetcode id=49 lang=python3
+#
+# [49] Group Anagrams
+#
 
-## 49
+from typing import List
+from collections import defaultdict
 
-### anagrams = {} (a standard dictionary) and dict = collections.defaultdict(list)
 
-```py
-dict = {}
-
-defaultdict = collections.defaultdict(list)
-```
-
-- Standard Dictionary raises `KeyError` if key is missing
-- Default Dictionary creates a default value automatically (e.g., `[]` for `list`).
-
-```py
-anagrams = defaultdict(list)
+# @lc code=start
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        anagrams = defaultdict(list)
         for str in strs:
             # sort the word
             sorted_word = "".join(sorted(str))
@@ -32,4 +29,6 @@ anagrams = defaultdict(list)
         #     else:
         #         anagrams[sorted_word].append(word)
         # return list(anagrams.values())
-```
+
+
+# @lc code=end
