@@ -68,7 +68,7 @@ class Solution {
   std::vector<int> twoSum(std::vector<int> &nums, int target) {
     // Hashmap to store the number as a key, and store the index as a value
     std::unordered_map<int, int> m;
-    std::vector<int> result;
+    std::vector<int> res;
 
     // Loop through the vector
     for (int i = 0; i < nums.size(); i++) {
@@ -76,8 +76,8 @@ class Solution {
       if (m.find(target - nums[i]) != m.end()) {
         // Return the index of corresponding number and the index of the current
         // number
-        result.push_back(m[target - nums[i]]);
-        result.push_back(i);
+        res.push_back(m[target - nums[i]]);
+        res.push_back(i);
         break;
       }
       // Store the number and the index in the map
@@ -95,7 +95,7 @@ class Solution {
     //   }
     // }
 
-    return result;
+    return res;
   }
 };
 // @lc code=end

@@ -74,7 +74,7 @@ class Solution {
  public:
   vector<vector<string>> groupAnagrams(vector<string> &strs) {
     unordered_map<string, vector<string>> m;
-    vector<vector<string>> result;
+    vector<vector<string>> res;
 
     for (string s : strs) {
       string t = s;
@@ -83,10 +83,10 @@ class Solution {
     }
 
     for (auto &n : m) {
-      result.emplace_back(n.second);
+      res.emplace_back(n.second);
     }
 
-    return result;
+    return res;
   }
 };
 // @lc code=end

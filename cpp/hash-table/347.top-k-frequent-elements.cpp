@@ -52,7 +52,7 @@ class Solution {
   vector<int> topKFrequent(vector<int> &nums, int k) {
     // Hashmap to store the number as a key, and store the frequency as a value
     unordered_map<int, int> m;
-    vector<int> result;
+    vector<int> res;
 
     // Loop through the vector
     for (auto &num : nums) {
@@ -72,7 +72,7 @@ class Solution {
     }
 
     while (!pq.empty()) {
-      result.push_back(pq.top().second);
+      res.push_back(pq.top().second);
       pq.pop();
     }
 
@@ -95,7 +95,7 @@ class Solution {
     //   }
     // }
 
-    return result;
+    return res;
   }
 };
 
