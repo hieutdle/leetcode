@@ -40,7 +40,7 @@
  *
  */
 
-#include <queue>
+// #include <queue>
 #include <unordered_map>
 #include <vector>
 
@@ -60,40 +60,40 @@ class Solution {
       m[num]++;
     }
 
-    // Approach 1: Min Heap / Priority Queue
-    using pii = pair<int, int>;
-    priority_queue<pii, vector<pii>, greater<pii>> pq;
+    // // Approach 1: Min Heap / Priority Queue
+    // using pii = pair<int, int>;
+    // priority_queue<pii, vector<pii>, greater<pii>> pq;
 
-    for (auto &[num, freq] : m) {
-      pq.push({freq, num});
-      if (pq.size() > k) {
-        pq.pop();
-      }
-    }
+    // for (auto &[num, freq] : m) {
+    //   pq.push({freq, num});
+    //   if (pq.size() > k) {
+    //     pq.pop();
+    //   }
+    // }
 
-    while (!pq.empty()) {
-      res.push_back(pq.top().second);
-      pq.pop();
-    }
+    // while (!pq.empty()) {
+    //   res.push_back(pq.top().second);
+    //   pq.pop();
+    // }
 
-    // Approach 2: Bucket Sort¶
+    // Approach 2: Bucket Sort
     // Create a vector of vector to store the frequency and the number
     // In the worst case, the frequency of the number is the same as the size of
     // the vector. And we have to store the 0 frequency number as well.
-    // vector<vector<int>> bucket(nums.size() + 1);
+    vector<vector<int>> bucket(nums.size() + 1);
 
-    // for (auto &[num, freq] : m) {
-    //   bucket[freq].push_back(num);
-    // }
+    for (auto &[num, freq] : m) {
+      bucket[freq].push_back(num);
+    }
 
-    // for (int i = bucket.size() - 1; i >= 0; i--) {
-    //   for (const int &num : bucket[i]) {
-    //     result.push_back(num);
-    //     if (result.size() == k) {
-    //       return result;
-    //     }
-    //   }
-    // }
+    for (int i = bucket.size() - 1; i >= 0; i--) {
+      for (const int &num : bucket[i]) {
+        res.push_back(num);
+        if (res.size() == k) {
+          return res;
+        }
+      }
+    }
 
     return res;
   }

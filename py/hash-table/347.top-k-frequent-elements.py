@@ -41,35 +41,62 @@
 #
 
 from typing import List
-from collections import Counter
-from heapq import heappush, heappop
+# from collections import Counter
+# from heapq import heappush, heappop
 
 
 # @lc code=start
 class Solution:
     def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+        # Bucket sort solution
+
+        # Hash table to count the frequency of each number
+        count = {}
+        for num in nums:
+            # Get the current count of the number (or 0) and increment it
+            count[num] = count.get(num, 0) + 1
+
+        # Store the numbers in a bucket where the index is the frequency
+        # Initialize the bucket with empty lists
+        bucket = [[] for _ in range(len(nums) + 1)]
+        for num, freq in count.items():
+            bucket[freq].append(num)
+
+        res = []
+
+        for i in range(len(bucket) - 1, 0, -1):
+            for num in bucket[i]:
+                res.append(num)
+                if len(res) == k:
+                    return res
+
+        # Python doesn't check all control paths
+        # return res
+
         # Short solution using most_common
         # cnt = Counter(nums)
         # return [x for x, _ in cnt.most_common(k)]
 
-        # Count the frequency of each number in nums using Counter.
-        num_frequencies = Counter(nums)
+        # Min heap solution
 
-        # Initialize a min heap to keep track of top k elements.
-        min_heap = []
+        # # Count the frequency of each number in nums using Counter.
+        # num_frequencies = Counter(nums)
 
-        # Iterate over the number-frequency pairs.
-        for num, freq in num_frequencies.items():
-            # Push a tuple of (frequency, number) onto the heap.
-            # Python's heapq module creates a min-heap by default.
-            heappush(min_heap, (freq, num))
+        # # Initialize a min heap to keep track of top k elements.
+        # min_heap = []
 
-            # If the heap size exceeds k, remove the smallest frequency element.
-            if len(min_heap) > k:
-                heappop(min_heap)
+        # # Iterate over the number-frequency pairs.
+        # for num, freq in num_frequencies.items():
+        #     # Push a tuple of (frequency, number) onto the heap.
+        #     # Python's heapq module creates a min-heap by default.
+        #     heappush(min_heap, (freq, num))
 
-        # Extract the top k frequent numbers by taking the second element of each tuple.
-        return [pair[1] for pair in min_heap]
+        #     # If the heap size exceeds k, remove the smallest frequency element.
+        #     if len(min_heap) > k:
+        #         heappop(min_heap)
+
+        # # Extract the top k frequent numbers by taking the second element of each tuple.
+        # return [pair[1] for pair in min_heap]
 
 
 # @lc code=end
