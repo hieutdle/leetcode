@@ -6,6 +6,18 @@ The purpose of this repository is to serve as a portfolio of my work and to prov
 
 I understand how challenging it can be to work through these problems and I hope that my solutions can provide guidance and direction for those struggling to find their own solutions.
 
+## Table of Contents
+
+- [Solutions to LeetCode problems](#solutions-to-leetcode-problems)
+  - [Table of Contents](#table-of-contents)
+  - [Completion Summary (Only added solutions)](#completion-summary-only-added-solutions)
+  - [Solutions](#solutions)
+    - [Array \& Hash Table](#array--hash-table)
+    - [Two Pointers](#two-pointers)
+    - [Sliding Window](#sliding-window)
+    - [Binary Search](#binary-search)
+    - [1-D Dynamic Programming](#1-d-dynamic-programming)
+
 ## Completion Summary (Only added solutions)
 
 [My LeetCode profile](https://leetcode.com/goldennovember/)
