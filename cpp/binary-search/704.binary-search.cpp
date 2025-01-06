@@ -53,7 +53,7 @@
 using namespace std;
 // @lc code=start
 class Solution {
-public:
+ public:
   int search(vector<int> &nums, int target) {
     int left = 0, right = nums.size();
 
