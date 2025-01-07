@@ -65,7 +65,7 @@
 // @lc code=start
 class Solution {
  public:
-  bool containsDuplicate(std::vector<int> &nums) {
+  bool containsDuplicate(std::vector<int>& nums) {
     // Early exit compare to the other solution
     std::unordered_set<int> s;
     for (const int num : nums)

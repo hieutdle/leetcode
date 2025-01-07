@@ -72,7 +72,7 @@ using namespace std;
 // @lc code=start
 class Solution {
  public:
-  vector<vector<string>> groupAnagrams(vector<string> &strs) {
+  vector<vector<string>> groupAnagrams(vector<string>& strs) {
     unordered_map<string, vector<string>> m;
     vector<vector<string>> res;
 
@@ -82,7 +82,7 @@ class Solution {
       m[t].emplace_back(s);
     }
 
-    for (auto &n : m) {
+    for (auto& n : m) {
       res.emplace_back(n.second);
     }
 

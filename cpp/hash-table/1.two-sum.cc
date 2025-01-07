@@ -65,7 +65,7 @@
 // @lc code=start
 class Solution {
  public:
-  std::vector<int> twoSum(std::vector<int> &nums, int target) {
+  std::vector<int> twoSum(std::vector<int>& nums, int target) {
     // Hashmap to store the number as a key, and store the index as a value
     std::unordered_map<int, int> m;
     std::vector<int> res;

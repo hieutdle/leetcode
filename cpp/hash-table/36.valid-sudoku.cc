@@ -87,7 +87,7 @@ using namespace std;
 // @lc code=start
 class Solution {
  public:
-  bool isValidSudoku(vector<vector<char>> &board) {
+  bool isValidSudoku(vector<vector<char>>& board) {
     unordered_map<int, unordered_map<int, bool>> rows, cols, boxes;
 
     for (int i = 0; i < 9; i++) {

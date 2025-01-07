@@ -52,7 +52,7 @@ using namespace std;
 // @lc code=start
 class Solution {
  public:
-  vector<int> productExceptSelf(vector<int> &nums) {
+  vector<int> productExceptSelf(vector<int>& nums) {
     int n = nums.size();
     vector<int> res(n, 1);
 

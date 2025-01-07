@@ -51,7 +51,7 @@ using namespace std;
 // @lc code=start
 class Solution {
  public:
-  int longestConsecutive(vector<int> &nums) {
+  int longestConsecutive(vector<int>& nums) {
     if (nums.empty()) {
       return 0;
     }
@@ -60,7 +60,7 @@ class Solution {
 
     int res = 0;
 
-    for (auto &num : s) {
+    for (auto& num : s) {
       // Check if its the start of a sequence
       if (s.find(num - 1) == s.end()) {
         int length = 0;

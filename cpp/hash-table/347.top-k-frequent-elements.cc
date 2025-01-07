@@ -49,13 +49,13 @@ using namespace std;
 // @lc code=start
 class Solution {
  public:
-  vector<int> topKFrequent(vector<int> &nums, int k) {
+  vector<int> topKFrequent(vector<int>& nums, int k) {
     // Hashmap to store the number as a key, and store the frequency as a value
     unordered_map<int, int> m;
     vector<int> res;
 
     // Loop through the vector
-    for (auto &num : nums) {
+    for (auto& num : nums) {
       // Store the number and the frequency in the map
       m[num]++;
     }
@@ -82,12 +82,12 @@ class Solution {
     // the vector. And we have to store the 0 frequency number as well.
     vector<vector<int>> bucket(nums.size() + 1);
 
-    for (auto &[num, freq] : m) {
+    for (auto& [num, freq] : m) {
       bucket[freq].push_back(num);
     }
 
     for (int i = bucket.size() - 1; i >= 0; i--) {
-      for (const int &num : bucket[i]) {
+      for (const int& num : bucket[i]) {
         res.push_back(num);
         if (res.size() == k) {
           return res;
