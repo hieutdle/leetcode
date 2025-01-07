@@ -45,6 +45,7 @@ Solutions
 | 0238 | [Product of Array Except Self](https://leetcode.com/problems/product-of-array-except-self/) | [py](python/hash-table/238.product-of-array-except-self.py) | [cc](cpp/hash-table/238.product-of-array-except-self.cc) |   Medium   |                                           `Array` `Prefix Sum`                                            |
 | 0242 | [Valid Anagram](https://leetcode.com/problems/valid-anagram/)                               |        [py](python/hash-table/242.valid-anagram.py)         |        [cc](cpp/hash-table/242.valid-anagram.cc)         |    Easy    |                                      `Hash Table` `String` `Sorting`                                      |
 | 0347 | [Top K Frequent Elements](https://leetcode.com/problems/top-k-frequent-elements/)           |   [py](python/hash-table/347.top-k-frequent-elements.py)    |   [cc](cpp/hash-table/347.top-k-frequent-elements.cc)    |   Medium   | `Array` `Hash Table` `Divide and Conquer` `Heap (Priority Queue)` `Bucket Sort` `Counting` `Quick Select` |
+| 1408 | [String Matching in an Array](https://leetcode.com/problems/string-matching-in-an-array/)   | [py](python/hash-table/1408.string-matching-in-an-array.py) | [cc](cpp/hash-table/1408.string-matching-in-an-array.cc) |    Easy    |                                    `Array` `String` `String Matching`                                     |
 
 ### Two Pointers
 
