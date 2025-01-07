@@ -16,6 +16,7 @@ I understand how challenging it can be to work through these problems and I hope
     - [Two Pointers](#two-pointers)
     - [Sliding Window](#sliding-window)
     - [Binary Search](#binary-search)
+    - [Trie](#trie)
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
 
 ## Completion Summary (Only added solutions)
@@ -64,6 +65,12 @@ Solutions
 | No.  | Title                                                         |                     Python                      |                     C++                      | Difficulty |          Tags           |
 | :--: | :------------------------------------------------------------ | :---------------------------------------------: | :------------------------------------------: | :--------: | :---------------------: |
 | 0704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [py](python/binary-search/704.binary-search.py) | [cc](cpp/binary-search/704.binary-search.cc) |    Easy    | `Array` `Binary Search` |
+
+### Trie
+
+| No.  | Title                                                                                     |                       Python                        |                       C++                        | Difficulty |                 Tags                  |
+| :--: | :---------------------------------------------------------------------------------------- | :-------------------------------------------------: | :----------------------------------------------: | :--------: | :-----------------------------------: |
+| 0208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [py](python/trie/208.implement-trie-prefix-tree.py) | [cc](cpp/trie/208.implement-trie-prefix-tree.cc) |   Medium   | `Hash Table` `String` `Design` `Trie` |
 
 ### 1-D Dynamic Programming
 
