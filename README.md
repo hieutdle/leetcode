@@ -16,8 +16,10 @@ I understand how challenging it can be to work through these problems and I hope
     - [Two Pointers](#two-pointers)
     - [Sliding Window](#sliding-window)
     - [Binary Search](#binary-search)
+    - [Linked List](#linked-list)
     - [Trie](#trie)
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
+    - [Greedy](#greedy)
 
 ## Completion Summary (Only added solutions)
 
@@ -25,10 +27,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |        6        |
-| :yellow_circle: Medium |        6        |
+| :green_circle: Easy    |        9        |
+| :yellow_circle: Medium |        7        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       12        |
+| :black_circle: Total   |       16        |
 
 Solutions
 
@@ -66,6 +68,12 @@ Solutions
 | :--: | :------------------------------------------------------------ | :---------------------------------------------: | :------------------------------------------: | :--------: | :---------------------: |
 | 0704 | [Binary Search](https://leetcode.com/problems/binary-search/) | [py](python/binary-search/704.binary-search.py) | [cc](cpp/binary-search/704.binary-search.cc) |    Easy    | `Array` `Binary Search` |
 
+### Linked List
+
+| No.  | Title                                                                     |                       Python                        |                       C++                        | Difficulty |           Tags            |
+| :--: | :------------------------------------------------------------------------ | :-------------------------------------------------: | :----------------------------------------------: | :--------: | :-----------------------: |
+| 0206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [py](python/linked-list/206.reverse-linked-list.py) | [cc](cpp/linked-list/206.reverse-linked-list.cc) |    Easy    | `Linked List` `Recursion` |
+
 ### Trie
 
 | No.  | Title                                                                                     |                       Python                        |                       C++                        | Difficulty |                 Tags                  |
@@ -77,3 +85,9 @@ Solutions
 | No.  | Title                                                             |                           Python                           |                           C++                           | Difficulty |                    Tags                    |
 | :--: | :---------------------------------------------------------------- | :--------------------------------------------------------: | :-----------------------------------------------------: | :--------: | :----------------------------------------: |
 | 0070 | [Climbing Stairs](https://leetcode.com/problems/climbing-stairs/) | [py](python/1-d-dynamic-programming/70.climbing-stairs.py) | [cc](cpp/1-d-dynamic-programming/70.climbing-stairs.cc) |    Easy    | `Math` `Dynamic Programming` `Memoization` |
+
+### Greedy
+
+| No.  | Title                                                               |                   Python                   |                   C++                   | Difficulty |                        Tags                        |
+| :--: | :------------------------------------------------------------------ | :----------------------------------------: | :-------------------------------------: | :--------: | :------------------------------------------------: |
+| 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [py](python/greedy/53.maximum-subarray.py) | [cc](cpp/greedy/53.maximum-subarray.cc) |   Medium   | `Array` `Divide and Conquer` `Dynamic Programming` |
