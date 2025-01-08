@@ -78,6 +78,7 @@ class Solution {
     // Recursive
     if (!head || !head->next) return head;
 
+    // Reverse the rest of the linked list
     ListNode* newHead = reverseList(head->next);
     head->next->next = head;
     head->next = nullptr;

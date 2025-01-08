@@ -69,10 +69,13 @@ class Solution:
             return head
 
         # Recursive
+
+        # Reverse the remainder of the linked list
         newHead = self.reverseList(head.next)
 
         head.next.next = head
         head.next = None
+
         return newHead
 
         # Iterative
