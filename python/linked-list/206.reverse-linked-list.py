@@ -70,7 +70,7 @@ class Solution:
 
         # Recursive
 
-        # Reverse the remainder of the linked list
+        # https://www.youtube.com/watch?v=S92RuTtt9EE&ab_channel=JesseDietrichson
         newHead = self.reverseList(head.next)
 
         head.next.next = head
