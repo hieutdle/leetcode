@@ -66,33 +66,36 @@ class Solution {
       return 0;
     }
 
-    int profit = 0;
-    int res = 0;
-
-    for (int i = 1; i < n; i++) {
-      // The profit between two points
-      // is equal to the sum of the differences
-      // between all the points in between
-      profit += prices[i] - prices[i - 1];
-
-      // We should not start to buy profit if it is negative
-      if (profit < 0) {
-        profit = 0;
-      }
-
-      res = max(res, profit);
-    }
-
-    return res;
-    // int minPrice = prices[0];
-    // int maxProfit = 0;
+    // int profit = 0;
+    // int res = 0;
 
     // for (int i = 1; i < n; i++) {
-    //   maxProfit = max(maxProfit, prices[i] - minPrice);
-    //   minPrice = min(minPrice, prices[i]);
+    //   // The profit between two points
+    //   // is equal to the sum of the differences
+    //   // between all the points in between
+    //   profit += prices[i] - prices[i - 1];
+
+    //   // We should not start to buy profit if it is negative
+    //   if (profit < 0) {
+    //     profit = 0;
+    //   }
+
+    //   res = max(res, profit);
     // }
 
-    // return maxProfit;
+    // return res;
+    int minPrice = prices[0];
+    int maxProfit = 0;
+
+    for (int i = 1; i < n; i++) {
+      if (prices[i] < minPrice) {
+        minPrice = prices[i];
+      } else {
+        maxProfit = max(maxProfit, prices[i] - minPrice);
+      }
+    }
+
+    return maxProfit;
   }
 };
 // @lc code=end
