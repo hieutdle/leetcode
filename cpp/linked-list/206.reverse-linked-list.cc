@@ -78,7 +78,7 @@ class Solution {
     // Recursive
     if (!head || !head->next) return head;
 
-    //  https://www.youtube.com/watch?v=S92RuTtt9EE&ab_channel=JesseDietrichson
+    // https://www.youtube.com/watch?v=S92RuTtt9EE&ab_channel=JesseDietrichson
     ListNode* newHead = reverseList(head->next);
     head->next->next = head;
     head->next = nullptr;

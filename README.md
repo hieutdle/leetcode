@@ -76,9 +76,10 @@ Solutions
 
 ### Trie
 
-| No.  | Title                                                                                     |                       Python                        |                       C++                        | Difficulty |                 Tags                  |
-| :--: | :---------------------------------------------------------------------------------------- | :-------------------------------------------------: | :----------------------------------------------: | :--------: | :-----------------------------------: |
-| 0208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/) | [py](python/trie/208.implement-trie-prefix-tree.py) | [cc](cpp/trie/208.implement-trie-prefix-tree.cc) |   Medium   | `Hash Table` `String` `Design` `Trie` |
+| No.  | Title                                                                                                   |                            Python                            |                            C++                            | Difficulty |                 Tags                  |
+| :--: | :------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------: | :-------------------------------------------------------: | :--------: | :-----------------------------------: |
+| 0208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)               |     [py](python/trie/208.implement-trie-prefix-tree.py)      |     [cc](cpp/trie/208.implement-trie-prefix-tree.cc)      |   Medium   | `Hash Table` `String` `Design` `Trie` |
+| 2185 | [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | [py](python/trie/2185.counting-words-with-a-given-prefix.py) | [cc](cpp/trie/2185.counting-words-with-a-given-prefix.cc) |    Easy    |  `Array` `String` `String Matching`   |
 
 ### 1-D Dynamic Programming
 
