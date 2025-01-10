@@ -18,6 +18,7 @@ I understand how challenging it can be to work through these problems and I hope
     - [Binary Search](#binary-search)
     - [Linked List](#linked-list)
     - [Trie](#trie)
+    - [Graph](#graph)
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
     - [Greedy](#greedy)
 
@@ -27,10 +28,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |        9        |
-| :yellow_circle: Medium |        7        |
+| :green_circle: Easy    |       10        |
+| :yellow_circle: Medium |        8        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       16        |
+| :black_circle: Total   |       18        |
 
 Solutions
 
@@ -80,6 +81,12 @@ Solutions
 | :--: | :------------------------------------------------------------------------------------------------------ | :----------------------------------------------------------: | :-------------------------------------------------------: | :--------: | :-----------------------------------: |
 | 0208 | [Implement Trie (Prefix Tree)](https://leetcode.com/problems/implement-trie-prefix-tree/)               |     [py](python/trie/208.implement-trie-prefix-tree.py)      |     [cc](cpp/trie/208.implement-trie-prefix-tree.cc)      |   Medium   | `Hash Table` `String` `Design` `Trie` |
 | 2185 | [Counting Words With a Given Prefix](https://leetcode.com/problems/counting-words-with-a-given-prefix/) | [py](python/trie/2185.counting-words-with-a-given-prefix.py) | [cc](cpp/trie/2185.counting-words-with-a-given-prefix.cc) |    Easy    |  `Array` `String` `String Matching`   |
+
+### Graph
+
+| No.  | Title                                                                 |                   Python                    |                   C++                    | Difficulty |                                   Tags                                    |
+| :--: | :-------------------------------------------------------------------- | :-----------------------------------------: | :--------------------------------------: | :--------: | :-----------------------------------------------------------------------: |
+| 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [py](python/graph/200.number-of-islands.py) | [cc](cpp/graph/200.number-of-islands.cc) |   Medium   | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` |
 
 ### 1-D Dynamic Programming
 
