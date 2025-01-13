@@ -57,8 +57,6 @@
  *
  */
 
-// #include <functional>
-#include <functional>
 #include <queue>
 #include <vector>
 

@@ -30,9 +30,9 @@ I understand how challenging it can be to work through these problems and I hope
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
 | :green_circle: Easy    |       12        |
-| :yellow_circle: Medium |        8        |
+| :yellow_circle: Medium |        9        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       20        |
+| :black_circle: Total   |       21        |
 
 Solutions
 
@@ -85,9 +85,10 @@ Solutions
 
 ### Graph
 
-| No.  | Title                                                                 |                   Python                    |                   C++                    | Difficulty |                                   Tags                                    |
-| :--: | :-------------------------------------------------------------------- | :-----------------------------------------: | :--------------------------------------: | :--------: | :-----------------------------------------------------------------------: |
-| 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/) | [py](python/graph/200.number-of-islands.py) | [cc](cpp/graph/200.number-of-islands.cc) |   Medium   | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` |
+| No.  | Title                                                                   |                    Python                    |                    C++                    | Difficulty |                                   Tags                                    |
+| :--: | :---------------------------------------------------------------------- | :------------------------------------------: | :---------------------------------------: | :--------: | :-----------------------------------------------------------------------: |
+| 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/)   | [py](python/graph/200.number-of-islands.py)  | [cc](cpp/graph/200.number-of-islands.cc)  |   Medium   | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` |
+| 0695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [py](python/graph/695.max-area-of-island.py) | [cc](cpp/graph/695.max-area-of-island.cc) |   Medium   | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` |
 
 ### 1-D Dynamic Programming
 
