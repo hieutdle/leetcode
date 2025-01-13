@@ -29,10 +29,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       11        |
+| :green_circle: Easy    |       12        |
 | :yellow_circle: Medium |        8        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       19        |
+| :black_circle: Total   |       20        |
 
 Solutions
 
@@ -103,6 +103,7 @@ Solutions
 
 ### Bit Manipulation
 
-| No.  | Title                                                         |                       Python                       |                       C++                       | Difficulty |            Tags            |
-| :--: | :------------------------------------------------------------ | :------------------------------------------------: | :---------------------------------------------: | :--------: | :------------------------: |
-| 0136 | [Single Number](https://leetcode.com/problems/single-number/) | [py](python/bit-manipulation/136.single-number.py) | [cc](cpp/bit-manipulation/136.single-number.cc) |    Easy    | `Array` `Bit Manipulation` |
+| No.  | Title                                                               |                       Python                       |                       C++                       | Difficulty |                  Tags                   |
+| :--: | :------------------------------------------------------------------ | :------------------------------------------------: | :---------------------------------------------: | :--------: | :-------------------------------------: |
+| 0136 | [Single Number](https://leetcode.com/problems/single-number/)       | [py](python/bit-manipulation/136.single-number.py) | [cc](cpp/bit-manipulation/136.single-number.cc) |    Easy    |       `Array` `Bit Manipulation`        |
+| 0191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [py](python/bit-manipulation/191.number-of-1-bits) | [cc](cpp/bit-manipulation/191.number-of-1-bits) |    Easy    | `Divide and Conquer` `Bit Manipulation` |
