@@ -72,6 +72,8 @@ class Solution {
       //  1 ^ 1 = 0 (4)
       // XOR of a number with itself is 0 (1, 4)
       // XOR of a number with 0 is the number itself (1, 3)
+      // Even number of same numbers will cancel each other
+      // The single one will be left
       result ^= num;
     }
     return result;

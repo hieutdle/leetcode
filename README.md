@@ -21,6 +21,7 @@ I understand how challenging it can be to work through these problems and I hope
     - [Graph](#graph)
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
     - [Greedy](#greedy)
+    - [Bit Manipulation](#bit-manipulation)
 
 ## Completion Summary (Only added solutions)
 
@@ -28,10 +29,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       10        |
+| :green_circle: Easy    |       11        |
 | :yellow_circle: Medium |        8        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       18        |
+| :black_circle: Total   |       19        |
 
 Solutions
 
@@ -99,3 +100,9 @@ Solutions
 | No.  | Title                                                               |                   Python                   |                   C++                   | Difficulty |                        Tags                        |
 | :--: | :------------------------------------------------------------------ | :----------------------------------------: | :-------------------------------------: | :--------: | :------------------------------------------------: |
 | 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [py](python/greedy/53.maximum-subarray.py) | [cc](cpp/greedy/53.maximum-subarray.cc) |   Medium   | `Array` `Divide and Conquer` `Dynamic Programming` |
+
+### Bit Manipulation
+
+| No.  | Title                                                         |                       Python                       |                       C++                       | Difficulty |            Tags            |
+| :--: | :------------------------------------------------------------ | :------------------------------------------------: | :---------------------------------------------: | :--------: | :------------------------: |
+| 0136 | [Single Number](https://leetcode.com/problems/single-number/) | [py](python/bit-manipulation/136.single-number.py) | [cc](cpp/bit-manipulation/136.single-number.cc) |    Easy    | `Array` `Bit Manipulation` |
