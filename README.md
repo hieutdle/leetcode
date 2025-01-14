@@ -22,6 +22,7 @@ I understand how challenging it can be to work through these problems and I hope
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
     - [Greedy](#greedy)
     - [Bit Manipulation](#bit-manipulation)
+    - [Database](#database)
 
 ## Completion Summary (Only added solutions)
 
@@ -29,10 +30,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       12        |
-| :yellow_circle: Medium |        9        |
+| :green_circle: Easy    |       13        |
+| :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       21        |
+| :black_circle: Total   |       23        |
 
 Solutions
 
@@ -87,6 +88,7 @@ Solutions
 
 | No.  | Title                                                                   |                    Python                    |                    C++                    | Difficulty |                                   Tags                                    |
 | :--: | :---------------------------------------------------------------------- | :------------------------------------------: | :---------------------------------------: | :--------: | :-----------------------------------------------------------------------: |
+| 0133 | [Clone Graph](https://leetcode.com/problems/clone-graph/)               |    [py](python/graph/133.clone-graph.py)     |    [cc](cpp/graph/133.clone-graph.cc)     |   Medium   |     `Hash Table` `Depth-First Search` `Breadth-First Search` `Graph`      |
 | 0200 | [Number of Islands](https://leetcode.com/problems/number-of-islands/)   | [py](python/graph/200.number-of-islands.py)  | [cc](cpp/graph/200.number-of-islands.cc)  |   Medium   | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` |
 | 0695 | [Max Area of Island](https://leetcode.com/problems/max-area-of-island/) | [py](python/graph/695.max-area-of-island.py) | [cc](cpp/graph/695.max-area-of-island.cc) |   Medium   | `Array` `Depth-First Search` `Breadth-First Search` `Union Find` `Matrix` |
 
@@ -108,3 +110,9 @@ Solutions
 | :--: | :------------------------------------------------------------------ | :------------------------------------------------: | :---------------------------------------------: | :--------: | :-------------------------------------: |
 | 0136 | [Single Number](https://leetcode.com/problems/single-number/)       | [py](python/bit-manipulation/136.single-number.py) | [cc](cpp/bit-manipulation/136.single-number.cc) |    Easy    |       `Array` `Bit Manipulation`        |
 | 0191 | [Number of 1 Bits](https://leetcode.com/problems/number-of-1-bits/) | [py](python/bit-manipulation/191.number-of-1-bits) | [cc](cpp/bit-manipulation/191.number-of-1-bits) |    Easy    | `Divide and Conquer` `Bit Manipulation` |
+
+### Database
+
+| No. | Title                                                                   |              PostgreSQL               | Difficulty |    Tags    |
+| :-: | :---------------------------------------------------------------------- | :-----------------------------------: | :--------: | :--------: |
+| 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [sql](sql/175.combine-two-tables.sql) |    Easy    | `Database` |
