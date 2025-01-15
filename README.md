@@ -17,6 +17,7 @@ I understand how challenging it can be to work through these problems and I hope
     - [Sliding Window](#sliding-window)
     - [Binary Search](#binary-search)
     - [Linked List](#linked-list)
+    - [Tree](#tree)
     - [Trie](#trie)
     - [Graph](#graph)
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
@@ -30,10 +31,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       13        |
+| :green_circle: Easy    |       14        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       23        |
+| :black_circle: Total   |       24        |
 
 Solutions
 
@@ -76,6 +77,12 @@ Solutions
 | No.  | Title                                                                     |                       Python                        |                       C++                        | Difficulty |           Tags            |
 | :--: | :------------------------------------------------------------------------ | :-------------------------------------------------: | :----------------------------------------------: | :--------: | :-----------------------: |
 | 0206 | [Reverse Linked List](https://leetcode.com/problems/reverse-linked-list/) | [py](python/linked-list/206.reverse-linked-list.py) | [cc](cpp/linked-list/206.reverse-linked-list.cc) |    Easy    | `Linked List` `Recursion` |
+
+### Tree
+
+| No.  | Title                                                                                       |                        Python                         |                        C++                         | Difficulty |                               Tags                               |
+| :--: | :------------------------------------------------------------------------------------------ | :---------------------------------------------------: | :------------------------------------------------: | :--------: | :--------------------------------------------------------------: |
+| 0104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [py](python/tree/104.maximum-depth-of-binary-tree.py) | [cc](cpp/tree/104.maximum-depth-of-binary-tree.cc) |    Easy    | `Tree` `Depth-First Search` `Breadth-First Search` `Binary Tree` |
 
 ### Trie
 
