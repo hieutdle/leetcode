@@ -31,10 +31,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       14        |
+| :green_circle: Easy    |       15        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       24        |
+| :black_circle: Total   |       25        |
 
 Solutions
 
@@ -83,6 +83,7 @@ Solutions
 | No.  | Title                                                                                       |                        Python                         |                        C++                         | Difficulty |                               Tags                               |
 | :--: | :------------------------------------------------------------------------------------------ | :---------------------------------------------------: | :------------------------------------------------: | :--------: | :--------------------------------------------------------------: |
 | 0104 | [Maximum Depth of Binary Tree](https://leetcode.com/problems/maximum-depth-of-binary-tree/) | [py](python/tree/104.maximum-depth-of-binary-tree.py) | [cc](cpp/tree/104.maximum-depth-of-binary-tree.cc) |    Easy    | `Tree` `Depth-First Search` `Breadth-First Search` `Binary Tree` |
+| 0543 | [Diameter of Binary Tree](https://leetcode.com/problems/diameter-of-binary-tree/)           |   [py](python/tree/543.diameter-of-binary-tree.py)    |   [cc](cpp/tree/543.diameter-of-binary-tree.cc)    |    Easy    |            `Tree` `Depth-First Search` `Binary Tree`             |
 
 ### Trie
 
