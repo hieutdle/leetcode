@@ -62,15 +62,16 @@
 #include <unordered_map>
 #include <vector>
 
+using namespace std;
 // @lc code=start
 class Solution {
  public:
   std::vector<int> twoSum(std::vector<int>& nums, int target) {
-    // Hashmap to store the number as a key, and store the index as a value
-    std::unordered_map<int, int> m;
     std::vector<int> res;
 
-    // Loop through the vector
+    // Hashmap to store the number as a key, and store the index as a value
+    std::unordered_map<int, int> m;
+
     for (int i = 0; i < nums.size(); i++) {
       // Check if the corresponding number is already in the map or not.
       if (m.find(target - nums[i]) != m.end()) {
@@ -78,7 +79,7 @@ class Solution {
         // number
         res.push_back(m[target - nums[i]]);
         res.push_back(i);
-        break;
+        return res;
       }
       // Store the number and the index in the map
       m.insert({nums[i], i});

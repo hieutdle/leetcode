@@ -42,6 +42,11 @@ Solutions
 
 ### Array & Hash Table
 
+| No.  | Title                                                       |                   C++                   |                     Java                     | Difficulty |             Tags              |
+| :--: | :---------------------------------------------------------- | :-------------------------------------: | :------------------------------------------: | :--------: | :---------------------------: |
+| 0001 | [Two Sum](https://leetcode.com/problems/two-sum/)           |    [cc](cpp/hash-table/1.two-sum.cc)    |    [java](java/hash-table/1.two-sum.java)    |    Easy    |     `Array` `Hash Table`      |
+| 0036 | [Valid Sudoku](https://leetcode.com/problems/valid-sudoku/) | [cc](cpp/hash-table/36.valid-sudoku.cc) | [java](java/hash-table/36.valid-sudoku.java) |   Medium   | `Array` `Hash Table` `Matrix` |
+
 | No.  | Title                                                                                       |                           Python                            |                           C++                            | Difficulty |                                                   Tags                                                    |
 | :--: | :------------------------------------------------------------------------------------------ | :---------------------------------------------------------: | :------------------------------------------------------: | :--------: | :-------------------------------------------------------------------------------------------------------: |
 | 0001 | [Two Sum](https://leetcode.com/problems/two-sum/)                                           |            [py](python/hash-table/1.two-sum.py)             |            [cc](cpp/hash-table/1.two-sum.cc)             |    Easy    |                                           `Array` `Hash Table`                                            |
