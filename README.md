@@ -31,10 +31,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       15        |
+| :green_circle: Easy    |       16        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       25        |
+| :black_circle: Total   |       26        |
 
 Solutions
 
@@ -124,3 +124,4 @@ Solutions
 | No. | Title                                                                   |              PostgreSQL               | Difficulty |    Tags    |
 | :-: | :---------------------------------------------------------------------- | :-----------------------------------: | :--------: | :--------: |
 | 175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/) | [sql](sql/175.combine-two-tables.sql) |    Easy    | `Database` |
+| 182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)     |  [sql](sql/182.duplicate-emails.sql)  |    Easy    | `Database` |
