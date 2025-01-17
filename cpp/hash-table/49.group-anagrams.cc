@@ -77,6 +77,7 @@ class Solution {
     vector<vector<string>> res;
 
     for (string s : strs) {
+      // Create a sorted string as key
       string t = s;
       sort(t.begin(), t.end());
       m[t].emplace_back(s);

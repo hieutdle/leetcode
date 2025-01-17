@@ -48,6 +48,7 @@
  * Follow-up: Can you come up with an algorithm that is less than O(n^2) time complexity?
  */
 
+import java.util.Map;
 import java.util.HashMap;
 
 // @lc code=start
@@ -57,7 +58,7 @@ class Solution {
         int[] result = new int[2];
 
         // Hashmap to store the number as a key, and store the index as a value
-        HashMap<Integer, Integer> map = new HashMap<>();
+        Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
             // Check if the corresponding number is already in the map or not.
