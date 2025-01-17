@@ -73,10 +73,7 @@ class Solution {
 
     return false;
 
-    // Other solution
-
-    // Still early exit
-    // std::unordered_set<int> s;
+    // Check contains
     // for (int i = 0; i < nums.size(); i++) {
     //   if (s.find(nums[i]) != s.end()) {
     //     return true;
@@ -85,9 +82,11 @@ class Solution {
     // }
     // return false;
 
+    // Compare size
     // std::unordered_set<int> s(nums.begin(), nums.end());
     // return s.size() != nums.size();
 
+    // Check two numbers next to each other
     //  std::sort(nums.begin(), nums.end());
     //  for (int i = 1; i < nums.size(); ++i)
     //    if (nums[i] == nums[i - 1])
