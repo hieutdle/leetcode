@@ -78,9 +78,9 @@ class Solution {
 
     for (string s : strs) {
       // Create a sorted string as key
-      string t = s;
-      sort(t.begin(), t.end());
-      m[t].emplace_back(s);
+      string k = s;
+      sort(k.begin(), k.end());
+      m[k].emplace_back(s);
     }
 
     for (auto& n : m) {

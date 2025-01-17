@@ -67,10 +67,10 @@ class Solution {
 
         for (String s : strs) {
             // Convert the string to a character array and sort it.
-            char[] t = s.toCharArray();
-            Arrays.sort(t);
+            char[] temp = s.toCharArray();
+            Arrays.sort(temp);
             // Create a new string from the sorted character array as the key.
-            String k = String.valueOf(t);
+            String k = String.valueOf(temp);
             // If the sorted string key is not present in the map, initialize the list.
             // Then add the original string to the list associated with the sorted string key.
             map.computeIfAbsent(k, _ -> new ArrayList<>()).add(s);
