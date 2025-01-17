@@ -5,11 +5,16 @@
  *
  * https://leetcode.com/problems/contains-duplicate/description/
  *
- * algorithms Easy (62.58%) Likes: 12508 Dislikes: 1317 Total Accepted: 4.7M Total Submissions: 7.5M
- * Testcase Example: '[1,2,3,1]'
+ * algorithms
+ * Easy (62.58%)
+ * Likes:    12508
+ * Dislikes: 1317
+ * Total Accepted:    4.7M
+ * Total Submissions: 7.5M
+ * Testcase Example:  '[1,2,3,1]'
  *
- * Given an integer array nums, return true if any value appears at least twice in the array, and
- * return false if every element is distinct.
+ * Given an integer array nums, return true if any value appears at least twice
+ * in the array, and return false if every element is distinct.
  * 
  * 
  * Example 1:
@@ -48,7 +53,8 @@
  * Constraints:
  * 
  * 
- * 1 <= nums.length <= 10^5 -10^9 <= nums[i] <= 10^9
+ * 1 <= nums.length <= 10^5
+ * -10^9 <= nums[i] <= 10^9
  * 
  * 
  */
@@ -90,4 +96,3 @@ class Solution {
     }
 }
 // @lc code=end
-
