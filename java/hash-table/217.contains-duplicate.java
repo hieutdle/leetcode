@@ -60,14 +60,14 @@ import java.util.HashSet;
 // @lc code=start
 class Solution {
     public boolean containsDuplicate(int[] nums) {
-        Set<Integer> s = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
 
         for (int num : nums) {
-            if (s.contains(num)) {
+            if (set.contains(num)) {
                 return true;
             }
-            s.add(num);
-            // if (!s.add(num)) {
+            set.add(num);
+            // if (!set.add(num)) {
             //     return true;
             // }
         }
@@ -75,9 +75,9 @@ class Solution {
 
         // Compare size
         // for (int num : nums) {
-        //     s.add(num);
+        //     set.add(num);
         // }
-        // return s.size() != nums.length;
+        // return set.size() != nums.length;
 
         // Check two numbers next to each other
         // Arrays.sort(nums);

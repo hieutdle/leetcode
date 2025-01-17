@@ -46,20 +46,20 @@ class Solution {
             return 0;
         }
 
-        Set<Integer> s = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
         for (int num : nums) {
-            s.add(num);
+            set.add(num);
         }
 
 
         int result = 0;
 
-        for (int num : s) {
-            if (!s.contains(num - 1)) {
+        for (int num : set) {
+            if (!set.contains(num - 1)) {
                 // Check if its the start of a sequence
                 int length = 0;
 
-                while (s.contains(num + length)) {
+                while (set.contains(num + length)) {
                     length++;
                 }
 

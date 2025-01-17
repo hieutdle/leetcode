@@ -65,15 +65,15 @@ class Solution {
     public List<List<String>> groupAnagrams(String[] strs) {
         Map<String, List<String>> map = new HashMap<>();
 
-        for (String s : strs) {
+        for (String str : strs) {
             // Convert the string to a character array and sort it.
-            char[] temp = s.toCharArray();
+            char[] temp = str.toCharArray();
             Arrays.sort(temp);
             // Create a new string from the sorted character array as the key.
             String k = String.valueOf(temp);
             // If the sorted string key is not present in the map, initialize the list.
             // Then add the original string to the list associated with the sorted string key.
-            map.computeIfAbsent(k, _ -> new ArrayList<>()).add(s);
+            map.computeIfAbsent(k, _ -> new ArrayList<>()).add(str);
         }
 
         return new ArrayList<>(map.values());
