@@ -31,10 +31,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       17        |
+| :green_circle: Easy    |       18        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       27        |
+| :black_circle: Total   |       28        |
 
 Solutions
 
@@ -129,3 +129,4 @@ Solutions
 | 0175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)               |    [sql](sql/175.combine-two-tables.sql)     |    Easy    | `Database` |
 | 0182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                   |     [sql](sql/182.duplicate-emails.sql)      |    Easy    | `Database` |
 | 0183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | [sql](sql/183.customers-who-never-order.sql) |    Easy    | `Database` |
+| 0196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)     |  [sql](sql/196.delete-duplicate-emails.sql)  |    Easy    | `Database` |
