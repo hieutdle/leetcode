@@ -93,4 +93,3 @@ on c.id = o.customerId
 where o.id is null
 
 -- @lc code=end
-

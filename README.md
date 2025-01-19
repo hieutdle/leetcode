@@ -124,9 +124,10 @@ Solutions
 
 ### Database
 
-| No.  | Title                                                                                 |                  PostgreSQL                  | Difficulty |    Tags    |
-| :--: | :------------------------------------------------------------------------------------ | :------------------------------------------: | :--------: | :--------: |
-| 0175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)               |    [sql](sql/175.combine-two-tables.sql)     |    Easy    | `Database` |
-| 0182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                   |     [sql](sql/182.duplicate-emails.sql)      |    Easy    | `Database` |
-| 0183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/) | [sql](sql/183.customers-who-never-order.sql) |    Easy    | `Database` |
-| 0196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)     |  [sql](sql/196.delete-duplicate-emails.sql)  |    Easy    | `Database` |
+| No.  | Title                                                                                             |                     PostgreSQL                      | Difficulty |    Tags    |
+| :--: | :------------------------------------------------------------------------------------------------ | :-------------------------------------------------: | :--------: | :--------: |
+| 0175 | [Combine Two Tables](https://leetcode.com/problems/combine-two-tables/)                           |        [sql](sql/175.combine-two-tables.sql)        |    Easy    | `Database` |
+| 0182 | [Duplicate Emails](https://leetcode.com/problems/duplicate-emails/)                               |         [sql](sql/182.duplicate-emails.sql)         |    Easy    | `Database` |
+| 0183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    [sql](sql/183.customers-who-never-order.sql)     |    Easy    | `Database` |
+| 0196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                 |     [sql](sql/196.delete-duplicate-emails.sql)      |    Easy    | `Database` |
+| 1757 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [sql](sql/1757.recyclable-and-low-fat-products.sql) |    Easy    | `Database` |

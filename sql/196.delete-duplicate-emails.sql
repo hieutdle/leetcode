@@ -78,4 +78,3 @@ WHERE p.Email = p2.Email
 AND p.Id > p2.Id
 
 -- @lc code=end
-
