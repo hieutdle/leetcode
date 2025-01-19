@@ -31,10 +31,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       18        |
+| :green_circle: Easy    |       19        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       28        |
+| :black_circle: Total   |       29        |
 
 Solutions
 
