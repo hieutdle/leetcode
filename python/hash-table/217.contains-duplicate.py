@@ -60,21 +60,28 @@
 #
 
 # @lc code=start
-from typing import List
+from typing import List, Set
 
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        return len(nums) != len(set(nums))
+        # Early exit
+        s: Set[int] = set()
+        for num in nums:
+            if num in s:
+                return True
+            s.add(num)
+        return False
 
-    # Early exit
-    # def containsDuplicate(self, nums: List[int]) -> bool:
-    #     seen = set()
-    #     for num in nums:
-    #         if num in seen:
-    #             return True
-    #         seen.add(num)
-    #     return False
+        # Compare size
+        # return len(set(nums)) != len(nums)
+
+        # Check two numbers next to each other
+        # nums.sort()
+        # for i in range(len(nums) - 1):
+        #     if nums[i] == nums[i + 1]:
+        #         return True
+        # return False
 
 
 # @lc code=end

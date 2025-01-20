@@ -51,6 +51,9 @@ from typing import List
 # @lc code=start
 class Solution:
     def longestConsecutive(self, nums: List[int]) -> int:
+        if len(nums) == 0:
+            return 0
+
         s = set(nums)
         ans = 0
 

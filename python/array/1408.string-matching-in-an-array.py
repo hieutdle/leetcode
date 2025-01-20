@@ -63,7 +63,7 @@ from typing import List
 # @lc code=start
 class Solution:
     def stringMatching(self, words: List[str]) -> List[str]:
-        result = []
+        result: List[str] = []
 
         # Bruteforce solution
         for i in range(len(words)):

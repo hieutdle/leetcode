@@ -41,6 +41,7 @@
 #
 
 from typing import List
+# from typing import Tuple
 # from collections import Counter
 # from heapq import heappush, heappop
 
@@ -51,18 +52,18 @@ class Solution:
         # Bucket sort solution
 
         # Hash table to count the frequency of each number
-        count = {}
+        count: dict[int, int] = {}
         for num in nums:
             # Get the current count of the number (or 0) and increment it
             count[num] = count.get(num, 0) + 1
 
         # Store the numbers in a bucket where the index is the frequency
         # Initialize the bucket with empty lists
-        bucket = [[] for _ in range(len(nums) + 1)]
+        bucket: List[List[int]] = [[] for _ in range(len(nums) + 1)]
         for num, freq in count.items():
             bucket[freq].append(num)
 
-        res = []
+        res: List[int] = []
 
         for i in range(len(bucket) - 1, 0, -1):
             for num in bucket[i]:
@@ -70,10 +71,10 @@ class Solution:
                 if len(res) == k:
                     return res
 
-        # Python doesn't check all control paths
-        # return res
+        return res
 
         # Short solution using most_common
+
         # cnt = Counter(nums)
         # return [x for x, _ in cnt.most_common(k)]
 
@@ -83,7 +84,7 @@ class Solution:
         # num_frequencies = Counter(nums)
 
         # # Initialize a min heap to keep track of top k elements.
-        # min_heap = []
+        # min_heap: List[Tuple[int, int]] = []
 
         # # Iterate over the number-frequency pairs.
         # for num, freq in num_frequencies.items():

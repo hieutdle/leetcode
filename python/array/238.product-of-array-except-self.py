@@ -55,16 +55,22 @@ class Solution:
         n = len(nums)
         ans = [1] * n
 
+        # Go through the array and calculate the product of all the elements to the
+        # left of the current element
         prefix = 1
         for i in range(n):
             ans[i] = prefix
             prefix *= nums[i]
 
+        # Go through the array again and calculate the product of all the elements
+        # to the right of the current element
         suffix = 1
         for i in range(n - 1, -1, -1):
             ans[i] *= suffix
             suffix *= nums[i]
 
+        # The result is the product of all the elements to the left and right of
+        # the current element
         return ans
 
 

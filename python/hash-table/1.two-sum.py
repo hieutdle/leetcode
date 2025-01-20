@@ -65,18 +65,23 @@ from typing import List
 # @lc code=start
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
+        # Hashmap to store the number as a key, and store the index as a value
+        hash_map = {}
+        for i, num in enumerate(nums):
+            # Check if the corresponding number is already in the map or not.
+            if target - num in hash_map:
+                # Return the index of corresponding number
+                # and the index of the current number
+                return [hash_map[target - num], i]
+            # Store the number and the index in the map
+            hash_map[num] = i
+
         # Brute force solution
         # for i in range(len(nums)):
         #     for j in range(i+1, len(nums)):
         #         if nums[i] + nums[j] == target:
         #             return [i, j]
 
-        # Using hash table
-        hash_table = {}
-        for i, num in enumerate(nums):
-            if target - num in hash_table:
-                return [hash_table[target - num], i]
-            hash_table[num] = i
         return []
 
 

@@ -79,16 +79,18 @@
 #
 #
 
+from typing import List, Dict, Set, Tuple
 from collections import defaultdict
-from typing import List
 
 
 # @lc code=start
 class Solution:
     def isValidSudoku(self, board: List[List[str]]) -> bool:
-        rows = defaultdict(set)
-        cols = defaultdict(set)
-        boxes = defaultdict(set)  # key = (i // 3, j // 3)
+        rows: Dict[int, Set[str]] = defaultdict(set)
+        cols: Dict[int, Set[str]] = defaultdict(set)
+        boxes: Dict[Tuple[int, int], Set[str]] = defaultdict(
+            set
+        )  # key = (i // 3, j // 3)
 
         for i in range(9):
             for j in range(9):

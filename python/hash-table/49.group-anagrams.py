@@ -62,31 +62,32 @@
 #
 #
 
-from typing import List
+from typing import List, Dict
 from collections import defaultdict
 
 
 # @lc code=start
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        anagrams = defaultdict(list)
-        for str in strs:
+        hash_map: Dict[str, List[str]] = defaultdict(list)
+        for s in strs:
             # sort the word
-            sorted_word = "".join(sorted(str))
+            sorted_word = "".join(sorted(s))
             # Don't need to check if the sorted word is in the dictionary
-            anagrams[sorted_word].append(str)
-        return list(anagrams.values())
+            hash_map[sorted_word].append(s)
+        return list(hash_map.values())
 
-        # anagrams = {}
-        # for str in strs:
+        # Normal dictionary
+        # hash_map: Dict[str, List[str]] = {}
+        # for s in strs:
         #     # sort the word
-        #     sorted_word = "".join(sorted(str))
+        #     sorted_word = "".join(sorted(s))
         #     # if the sorted word is not in the dictionary, add it
-        #     if sorted_word not in anagrams:
-        #         anagrams[sorted_word] = [str]
+        #     if sorted_word not in hash_map:
+        #         hash_map[sorted_word] = [s]
         #     else:
-        #         anagrams[sorted_word].append(word)
-        # return list(anagrams.values())
+        #         hash_map[sorted_word].append(s)
+        # return list(hash_map.values())
 
 
 # @lc code=end

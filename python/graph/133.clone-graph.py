@@ -97,11 +97,11 @@ class Node:
         self.neighbors = neighbors if neighbors is not None else []
 """
 
-from typing import Optional
+from typing import Dict, Optional, List
 
 
 class Node:
-    def __init__(self, val=0, neighbors=None):
+    def __init__(self, val: int = 0, neighbors: Optional[List["Node"]] = None):
         self.val = val
         self.neighbors = neighbors if neighbors is not None else []
 
@@ -112,9 +112,9 @@ class Solution:
             return None
 
         # Map old node to new node
-        visited = {}
+        visited: Dict[Node, Node] = {}
 
-        def dfs(node):
+        def dfs(node: "Node") -> "Node":
             # If node is already visited, return the new node
             if node in visited:
                 return visited[node]

@@ -66,13 +66,13 @@
 
 
 class TrieNode:
-    def __init__(self):
-        self.children = {}
+    def __init__(self) -> None:
+        self.children: dict[str, TrieNode] = {}
         self.isEnd = False
 
 
 class Trie:
-    def __init__(self):
+    def __init__(self) -> None:
         self.root = TrieNode()
 
     def insert(self, word: str) -> None:
