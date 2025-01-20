@@ -1,6 +1,6 @@
 # Solutions to LeetCode problems
 
-The purpose of this repository is to serve as a portfolio of my work and to provide a resource for others seeking clear and easy-to-understand solutions to these problems. Every day starting January 1, 2025, I will be adding 2 solutions to this repository.
+The purpose of this repository is to serve as a portfolio of my work and to provide a resource for others seeking clear and easy-to-understand solutions to these problems. Every day starting January 1, 2025, I will be adding solutions to this repository.
 
 > <p style = "color:red"><strong>Please note that:</strong> my solutions are not necessarily optimized for efficiency in terms of time complexity or memory consumption. Instead, my focus is on providing solutions that are clear, and are easy for others to understand and learn from.</p>
 
