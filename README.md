@@ -22,6 +22,7 @@ I understand how challenging it can be to work through these problems and I hope
     - [Graph](#graph)
     - [1-D Dynamic Programming](#1-d-dynamic-programming)
     - [Greedy](#greedy)
+    - [Math \& Geometry](#math--geometry)
     - [Bit Manipulation](#bit-manipulation)
     - [Database](#database)
 
@@ -31,10 +32,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       20        |
+| :green_circle: Easy    |       21        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       30        |
+| :black_circle: Total   |       31        |
 
 Solutions
 
@@ -111,6 +112,12 @@ Solutions
 | No.  | Title                                                               |                     Python                     |                      C++                       | Difficulty |                        Tags                        |
 | :--: | :------------------------------------------------------------------ | :--------------------------------------------: | :--------------------------------------------: | :--------: | :------------------------------------------------: |
 | 0053 | [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) | [py](algorithms/greedy/53.maximum-subarray.py) | [cc](algorithms/greedy/53.maximum-subarray.cc) |   Medium   | `Array` `Divide and Conquer` `Dynamic Programming` |
+
+### Math & Geometry
+
+| No.  | Title                                                       |                  Python                   |                    C++                    | Difficulty |                Tags                |
+| :--: | :---------------------------------------------------------- | :---------------------------------------: | :---------------------------------------: | :--------: | :--------------------------------: |
+| 0202 | [Happy Number](https://leetcode.com/problems/happy-number/) | [py](algorithms/math/202.happy-number.py) | [cc](algorithms/math/202.happy-number.cc) |    Easy    | `Hash Table` `Math` `Two Pointers` |
 
 ### Bit Manipulation
 

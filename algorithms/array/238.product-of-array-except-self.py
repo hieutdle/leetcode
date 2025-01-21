@@ -46,12 +46,10 @@
 #
 #
 
-from typing import List
-
 
 # @lc code=start
 class Solution:
-    def productExceptSelf(self, nums: List[int]) -> List[int]:
+    def productExceptSelf(self, nums: list[int]) -> list[int]:
         n = len(nums)
         ans = [1] * n
 

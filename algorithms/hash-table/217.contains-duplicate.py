@@ -59,14 +59,14 @@
 #
 #
 
+
 # @lc code=start
-from typing import List, Set
 
 
 class Solution:
-    def containsDuplicate(self, nums: List[int]) -> bool:
+    def containsDuplicate(self, nums: list[int]) -> bool:
         # Early exit
-        s: Set[int] = set()
+        s: set[int] = set()
         for num in nums:
             if num in s:
                 return True

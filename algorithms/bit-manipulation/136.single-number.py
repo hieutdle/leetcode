@@ -56,12 +56,10 @@
 #
 #
 
-from typing import List
-
 
 # @lc code=start
 class Solution:
-    def singleNumber(self, nums: List[int]) -> int:
+    def singleNumber(self, nums: list[int]) -> int:
         res = 0
         # XOR: same bits give 0 and different bits give 1
         # 0 ^ 0 = 0 (1)

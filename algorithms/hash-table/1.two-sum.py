@@ -59,12 +59,10 @@
 # complexity?
 #
 
-from typing import List
-
 
 # @lc code=start
 class Solution:
-    def twoSum(self, nums: List[int], target: int) -> List[int]:
+    def twoSum(self, nums: list[int], target: int) -> list[int]:
         # Hashmap to store the number as a key, and store the index as a value
         hash_map = {}
         for i, num in enumerate(nums):

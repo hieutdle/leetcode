@@ -52,17 +52,15 @@
 #
 #
 
-from typing import List, Set, Tuple
-
 
 # @lc code=start
 class Solution:
-    def maxAreaOfIsland(self, grid: List[List[int]]) -> int:
+    def maxAreaOfIsland(self, grid: list[list[int]]) -> int:
         if not grid:
             return 0
 
         max_row, max_col = len(grid), len(grid[0])
-        visited: Set[Tuple[int, int]] = set()
+        visited: set[tuple[int, int]] = set()
 
         ans = 0
 

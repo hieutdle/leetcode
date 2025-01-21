@@ -62,14 +62,14 @@
 #
 #
 
-from typing import List, Dict
+
 from collections import defaultdict
 
 
 # @lc code=start
 class Solution:
-    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        hash_map: Dict[str, List[str]] = defaultdict(list)
+    def groupAnagrams(self, strs: list[str]) -> list[list[str]]:
+        hash_map: dict[str, list[str]] = defaultdict(list)
         for s in strs:
             # sort the word
             sorted_word = "".join(sorted(s))
@@ -78,7 +78,7 @@ class Solution:
         return list(hash_map.values())
 
         # Normal dictionary
-        # hash_map: Dict[str, List[str]] = {}
+        # hash_map: dict[str, list[str]] = {}
         # for s in strs:
         #     # sort the word
         #     sorted_word = "".join(sorted(s))

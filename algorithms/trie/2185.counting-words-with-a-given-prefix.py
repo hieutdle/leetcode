@@ -48,7 +48,6 @@
 #
 #
 
-from typing import List
 
 # @lc code=start
 
@@ -87,7 +86,7 @@ class Trie:
 
 
 class Solution:
-    def prefixCount(self, words: List[str], pref: str) -> int:
+    def prefixCount(self, words: list[str], pref: str) -> int:
         # Trie
         trie = Trie()
 

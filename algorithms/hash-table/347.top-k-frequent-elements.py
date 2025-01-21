@@ -40,15 +40,14 @@
 #
 #
 
-from typing import List
-# from typing import Tuple
+
 # from collections import Counter
 # from heapq import heappush, heappop
 
 
 # @lc code=start
 class Solution:
-    def topKFrequent(self, nums: List[int], k: int) -> List[int]:
+    def topKFrequent(self, nums: list[int], k: int) -> list[int]:
         # Bucket sort solution
 
         # Hash table to count the frequency of each number
@@ -59,11 +58,11 @@ class Solution:
 
         # Store the numbers in a bucket where the index is the frequency
         # Initialize the bucket with empty lists
-        bucket: List[List[int]] = [[] for _ in range(len(nums) + 1)]
+        bucket: list[list[int]] = [[] for _ in range(len(nums) + 1)]
         for num, freq in count.items():
             bucket[freq].append(num)
 
-        res: List[int] = []
+        res: list[int] = []
 
         for i in range(len(bucket) - 1, 0, -1):
             for num in bucket[i]:
@@ -84,7 +83,7 @@ class Solution:
         # num_frequencies = Counter(nums)
 
         # # Initialize a min heap to keep track of top k elements.
-        # min_heap: List[Tuple[int, int]] = []
+        # min_heap: list[tuple[int, int]] = []
 
         # # Iterate over the number-frequency pairs.
         # for num, freq in num_frequencies.items():

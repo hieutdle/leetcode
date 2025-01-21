@@ -57,17 +57,15 @@
 #
 #
 
-from typing import List, Set, Tuple
-
 
 # @lc code=start
 class Solution:
-    def numIslands(self, grid: List[List[str]]) -> int:
+    def numIslands(self, grid: list[list[str]]) -> int:
         if not grid:
             return 0
 
         max_row, max_col = len(grid), len(grid[0])
-        visited: Set[Tuple[int, int]] = set()
+        visited: set[tuple[int, int]] = set()
 
         ans = 0
 

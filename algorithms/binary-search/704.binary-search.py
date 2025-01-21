@@ -48,12 +48,10 @@
 #
 #
 
-from typing import List
-
 
 # @lc code=start
 class Solution:
-    def search(self, nums: List[int], target: int) -> int:
+    def search(self, nums: list[int], target: int) -> int:
         left, right = 0, len(nums)
         while left < right:
             mid = left + (right - left) // 2

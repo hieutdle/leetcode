@@ -57,13 +57,11 @@
 #
 #
 
-from typing import List
-
 
 # @lc code=start
 class Solution:
-    def stringMatching(self, words: List[str]) -> List[str]:
-        result: List[str] = []
+    def stringMatching(self, words: list[str]) -> list[str]:
+        result: list[str] = []
 
         # Bruteforce solution
         for i in range(len(words)):
