@@ -74,8 +74,8 @@
 -- Write your PostgreSQL query statement below
 delete from Person p
 using Person p2
-WHERE p.Email = p2.Email
-AND p.Id > p2.Id
+where p.Email = p2.Email
+and p.Id > p2.Id
 
 -- @lc code=end
 
