@@ -32,10 +32,10 @@ I understand how challenging it can be to work through these problems and I hope
 
 | Difficulty             | Solved Problems |
 | ---------------------- | :-------------: |
-| :green_circle: Easy    |       22        |
+| :green_circle: Easy    |       23        |
 | :yellow_circle: Medium |       10        |
 | :red_circle: Hard      |        0        |
-| :black_circle: Total   |       32        |
+| :black_circle: Total   |       33        |
 
 Solutions
 
@@ -135,5 +135,6 @@ Solutions
 | 0183 | [Customers Who Never Order](https://leetcode.com/problems/customers-who-never-order/)             |    [sql](database/183.customers-who-never-order.sql)     |    Easy    | `Database` |
 | 0196 | [Delete Duplicate Emails](https://leetcode.com/problems/delete-duplicate-emails/)                 |     [sql](database/196.delete-duplicate-emails.sql)      |    Easy    | `Database` |
 | 0627 | [Swap Salary](https://leetcode.com/problems/swap-salary/)                                         |           [sql](database/627.swap-salary.sql)            |    Easy    | `Database` |
+| 1484 | [Group Sold Products By The Date](https://leetcode.com/problems/group-sold-products-by-the-date/) | [sql](database/1484.group-sold-products-by-the-date.sql) |    Easy    | `Database` |
 | 1757 | [Recyclable and Low Fat Products](https://leetcode.com/problems/recyclable-and-low-fat-products/) | [sql](database/1757.recyclable-and-low-fat-products.sql) |    Easy    | `Database` |
 | 1795 | [Rearrange Products Table](https://leetcode.com/problems/rearrange-products-table/)               |    [sql](database/1795.rearrange-products-table.sql)     |    Easy    | `Database` |
