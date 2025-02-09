@@ -60,7 +60,8 @@ class Solution {
       m[num]++;
     }
 
-    // // Approach 1: Min Heap / Priority Queue
+    // Approach 1: Min Heap / Priority Queue
+
     // using pii = pair<int, int>;
     // priority_queue<pii, vector<pii>, greater<pii>> pq;
 
