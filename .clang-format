@@ -1,0 +1,5 @@
+BasedOnStyle: Google
+ColumnLimit: 120
+
+DerivePointerAlignment: false  # Make sure the * or & align on the left
+PointerAlignment: Left
