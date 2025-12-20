@@ -4,6 +4,7 @@ using std::string;
 
 class Solution {
  public:
+  // Time: O(n) | Space: O(1)
   bool isAnagram(string s, string t) {
     if (s.size() != t.size()) return false;
 

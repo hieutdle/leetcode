@@ -8,23 +8,24 @@ using std::vector;
 
 class Solution {
  public:
+  // Time: O(n) | Space: O(n)
   bool containsDuplicate(vector<int>& nums) {
     unordered_set<int> s;
     for (auto num : nums) {
-      if (s.find(num) != s.end()) {
-        return true;
-      }
+      if (s.contains(num)) return true;
       s.insert(num);
     }
     return false;
   }
 
+  // Time: O(n) | Space: O(n)
   // Compare size
   bool containsDuplicate2(vector<int>& nums) {
     unordered_set<int> s(nums.begin(), nums.end());
     return s.size() != nums.size();
   }
 
+  // Time: O(n log n) | Space: O(1)
   // Sort and check two numbers next to each other
   bool containsDuplicate3(vector<int>& nums) {
     sort(nums.begin(), nums.end());

@@ -9,6 +9,7 @@ using std::vector;
 
 class Solution {
  public:
+  // Time: O(n * k log k) | Space: O(n * k)
   vector<vector<string>> groupAnagrams(vector<string>& strs) {
     unordered_map<string, vector<string>> m;
     vector<vector<string>> res;
@@ -27,6 +28,7 @@ class Solution {
     return res;
   }
 
+  // Time: O(n * k) | Space: O(n * k)
   vector<vector<string>> groupAnagrams2(vector<string>& strs) {
     unordered_map<string, vector<string>> m;
     vector<vector<string>> res;
