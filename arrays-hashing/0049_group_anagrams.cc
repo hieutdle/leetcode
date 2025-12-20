@@ -1,0 +1,55 @@
+#include <algorithm>
+#include <string>
+#include <unordered_map>
+#include <vector>
+
+using std::string;
+using std::unordered_map;
+using std::vector;
+
+class Solution {
+ public:
+  vector<vector<string>> groupAnagrams(vector<string>& strs) {
+    unordered_map<string, vector<string>> m;
+    vector<vector<string>> res;
+
+    for (string s : strs) {
+      // Create a sorted string as key
+      string k = s;
+      sort(k.begin(), k.end());
+      m[k].emplace_back(s);
+    }
+
+    for (auto& n : m) {
+      res.emplace_back(n.second);
+    }
+
+    return res;
+  }
+
+  vector<vector<string>> groupAnagrams2(vector<string>& strs) {
+    unordered_map<string, vector<string>> m;
+    vector<vector<string>> res;
+
+    for (auto& s : strs) {
+      int cnt[26] = {0};
+      for (auto& c : s) ++cnt[c - 'a'];
+      string k;
+      // Words that are anagrams produce the same key.
+      // "eat" → 'a1e1t1'
+      for (int i = 0; i < 26; ++i) {
+        if (cnt[i]) {
+          k += 'a' + i;
+          k += std::to_string(cnt[i]);
+        }
+      }
+      m[k].emplace_back(s);
+    }
+
+    for (auto& n : m) {
+      res.emplace_back(n.second);
+    }
+
+    return res;
+  }
+};
