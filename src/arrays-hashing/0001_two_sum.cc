@@ -4,7 +4,7 @@
 using std::vector;
 
 class Solution {
- public:
+public:
   // Time: O(n) | Space: O(n)
   vector<int> twoSum(vector<int>& nums, int target) {
     // Hashmap to store the number as a key, and store the index as a value

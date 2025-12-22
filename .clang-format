@@ -1,4 +1,5 @@
-BasedOnStyle: Google
+BasedOnStyle: LLVM
+AlwaysBreakTemplateDeclarations: Yes
 ColumnLimit: 120
 
 DerivePointerAlignment: false  # Make sure the * or & align on the left

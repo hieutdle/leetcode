@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
+
 #include "../../src/arrays-hashing/0238_product_of_array_except_self.cc"
 
 class ProductOfArrayExceptSelfTest : public ::testing::Test {
- protected:
+protected:
   Solution solution;
 };
 

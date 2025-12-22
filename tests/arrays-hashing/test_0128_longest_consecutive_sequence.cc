@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
+
 #include "../../src/arrays-hashing/0128_longest_consecutive_sequence.cc"
 
 class LongestConsecutiveSequenceTest : public ::testing::Test {
- protected:
+protected:
   Solution solution;
 };
 

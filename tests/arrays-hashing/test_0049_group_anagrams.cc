@@ -1,11 +1,13 @@
 #include <gtest/gtest.h>
+
 #include <algorithm>
+
 #include "../../src/arrays-hashing/0049_group_anagrams.cc"
 
 class GroupAnagramsTest : public ::testing::Test {
- protected:
+protected:
   Solution solution;
-  
+
   // Helper function to sort the result for comparison
   void sortResult(std::vector<std::vector<std::string>>& result) {
     for (auto& group : result) {
@@ -18,12 +20,12 @@ class GroupAnagramsTest : public ::testing::Test {
 TEST_F(GroupAnagramsTest, BasicExample) {
   std::vector<std::string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
   auto result = solution.groupAnagrams(strs);
-  
+
   EXPECT_EQ(result.size(), 3);
-  
+
   // Sort for comparison
   sortResult(result);
-  
+
   // Check that anagrams are grouped together
   bool foundEatGroup = false, foundTanGroup = false, foundBatGroup = false;
   for (const auto& group : result) {
@@ -37,7 +39,7 @@ TEST_F(GroupAnagramsTest, BasicExample) {
       foundBatGroup = true;
     }
   }
-  
+
   EXPECT_TRUE(foundEatGroup);
   EXPECT_TRUE(foundTanGroup);
   EXPECT_TRUE(foundBatGroup);
@@ -73,10 +75,10 @@ TEST_F(GroupAnagramsTest, AllSameAnagrams) {
 TEST_F(GroupAnagramsTest, Method2_BasicExample) {
   std::vector<std::string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
   auto result = solution.groupAnagrams2(strs);
-  
+
   EXPECT_EQ(result.size(), 3);
   sortResult(result);
-  
+
   bool foundEatGroup = false, foundTanGroup = false, foundBatGroup = false;
   for (const auto& group : result) {
     if (group.size() == 3) {
@@ -87,7 +89,7 @@ TEST_F(GroupAnagramsTest, Method2_BasicExample) {
       foundBatGroup = true;
     }
   }
-  
+
   EXPECT_TRUE(foundEatGroup);
   EXPECT_TRUE(foundTanGroup);
   EXPECT_TRUE(foundBatGroup);

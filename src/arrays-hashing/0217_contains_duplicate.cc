@@ -7,12 +7,13 @@ using std::unordered_set;
 using std::vector;
 
 class Solution {
- public:
+public:
   // Time: O(n) | Space: O(n)
   bool containsDuplicate(vector<int>& nums) {
     unordered_set<int> s;
     for (auto num : nums) {
-      if (s.contains(num)) return true;
+      if (s.contains(num))
+        return true;
       s.insert(num);
     }
     return false;
@@ -30,7 +31,8 @@ class Solution {
   bool containsDuplicate3(vector<int>& nums) {
     sort(nums.begin(), nums.end());
     for (size_t i = 0; i < nums.size() - 1; ++i)
-      if (nums[i] == nums[i + 1]) return true;
+      if (nums[i] == nums[i + 1])
+        return true;
 
     return false;
   }

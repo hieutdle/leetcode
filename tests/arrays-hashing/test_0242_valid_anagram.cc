@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
+
 #include "../../src/arrays-hashing/0242_valid_anagram.cc"
 
 class ValidAnagramTest : public ::testing::Test {
- protected:
+protected:
   Solution solution;
 };
 

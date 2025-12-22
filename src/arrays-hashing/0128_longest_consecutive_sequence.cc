@@ -5,7 +5,7 @@
 using std::vector;
 
 class Solution {
- public:
+public:
   // Time: O(n) | Space: O(n)
   // Hashmap with optimization
   int longestConsecutive(vector<int>& nums) {
@@ -42,7 +42,7 @@ class Solution {
     std::unordered_set<int> s(nums.begin(), nums.end());
     // Map to store the length of consecutive sequence starting from each number
     std::unordered_map<int, int> m;
-    int res;
+    int res = 0;
 
     for (int x : nums) {
       int y = x;

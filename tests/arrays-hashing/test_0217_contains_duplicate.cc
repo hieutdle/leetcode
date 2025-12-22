@@ -1,8 +1,9 @@
 #include <gtest/gtest.h>
+
 #include "../../src/arrays-hashing/0217_contains_duplicate.cc"
 
 class ContainsDuplicateTest : public ::testing::Test {
- protected:
+protected:
   Solution solution;
 };
 
@@ -20,4 +21,3 @@ TEST_F(ContainsDuplicateTest, Case3) {
   std::vector<int> nums = {1, 1, 1, 3, 3, 4, 3, 2, 4, 2};
   EXPECT_TRUE(solution.containsDuplicate(nums));
 }
-

@@ -6,17 +6,17 @@
 using std::vector;
 
 class Solution {
- public:
+public:
   // Time: O(n) | Space: O(n)
   // Bucket Sort
   vector<int> topKFrequent(vector<int>& nums, int k) {
-        // Hashmap to store the number as a key, and store the frequency as a valueds
+    // Hashmap to store the number as a key, and store the frequency as a value
     std::unordered_map<int, int> m;
     vector<int> res;
 
     // Loop through the vector
     for (auto& num : nums) {
-            // Store the number and the frequency in the map
+      // Store the number and the frequency in the map
       m[num]++;
     }
 
@@ -26,12 +26,12 @@ class Solution {
     vector<vector<int>> bucket(nums.size() + 1);
 
     for (auto& [num, freq] : m) {
-      bucket[freq].push_back(num);
+      bucket[freq].emplace_back(num);
     }
 
     for (int i = bucket.size() - 1; i >= 0; i--) {
-      for (const int& num : bucket[i]) {
-        res.push_back(num);
+      for (int num : bucket[i]) {
+        res.emplace_back(num);
         if (res.size() == k) {
           return res;
         }
@@ -55,14 +55,14 @@ class Solution {
     }
 
     for (auto& [num, freq] : m) {
-      pq.push({freq, num});
+      pq.emplace(freq, num);
       if (pq.size() > k) {
         pq.pop();
       }
     }
 
     while (!pq.empty()) {
-      res.push_back(pq.top().second);
+      res.emplace_back(pq.top().second);
       pq.pop();
     }
 
@@ -81,15 +81,17 @@ class Solution {
 
     // Create pairs of {frequency, number} and sort
     vector<std::pair<int, int>> reverseCount;
+    reverseCount.reserve(m.size());
     for (auto& [num, count] : m) {
-      reverseCount.push_back({count, num});
+      reverseCount.emplace_back(count, num);
     }
 
     sort(reverseCount.begin(), reverseCount.end());
 
     // Extract top k numbers
+    res.reserve(k);
     for (int i = 0; i < k; i++) {
-      res.push_back(reverseCount[i].second);
+      res.emplace_back(reverseCount[i].second);
     }
 
     return res;
