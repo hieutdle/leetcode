@@ -11,7 +11,5 @@ project(leetcode-cpp
   LANGUAGES C CXX)
 
 enable_testing()
-
-add_subdirectory(src)
-add_subdirectory(test)
 add_subdirectory(extern)
+add_subdirectory(test)
