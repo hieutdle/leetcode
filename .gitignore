@@ -47,7 +47,3 @@ build/
 
 # MacOS Cache
 .DS_Store
-
-# Test binaries
-tests/test
-test
