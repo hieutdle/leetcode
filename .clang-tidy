@@ -46,9 +46,7 @@ Checks: >
         readability-redundant-control-flow,
         readability-redundant-smartptr-get,
         readability-simplify-subscript-expr,
-        
-# Disable: 
-#   readability-use-anyofallof
+        readability-use-anyofallof
 
 CheckOptions:
   - key:             readability-identifier-naming.MemberCase
@@ -57,6 +55,3 @@ CheckOptions:
     value:           camelBack
   - key:             readability-identifier-naming.VariableCase
     value:           camelBack
-
-ExtraArgs:
-  - -Wno-sign-compare

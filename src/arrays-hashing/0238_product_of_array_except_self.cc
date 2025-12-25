@@ -3,7 +3,7 @@
 using std::vector;
 
 class Solution {
-public:
+ public:
   // Time: O(n) | Space: O(1)
   vector<int> productExceptSelf(vector<int>& nums) {
     int n = nums.size();
@@ -35,8 +35,8 @@ public:
   vector<int> productExceptSelf2(vector<int>& nums) {
     int n = nums.size();
     vector<int> res(n);
-    vector<int> prefix(n, 1); // prefix product
-    vector<int> suffix(n, 1); // suffix product
+    vector<int> prefix(n, 1);  // prefix product
+    vector<int> suffix(n, 1);  // suffix product
 
     for (int i = 1; i < n; ++i)
       prefix[i] = prefix[i - 1] * nums[i - 1];

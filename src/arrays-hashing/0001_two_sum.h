@@ -1,14 +1,16 @@
+#pragma once
+
 #include <unordered_map>
 #include <vector>
 
-using std::vector;
+using namespace std;
 
 class Solution {
-public:
+ public:
   // Time: O(n) | Space: O(n)
   vector<int> twoSum(vector<int>& nums, int target) {
     // Hashmap to store the number as a key, and store the index as a value
-    std::unordered_map<int, int> m;
+    unordered_map<int, int> m;
 
     for (int idx = 0;; ++idx) {
       int x = nums[idx];

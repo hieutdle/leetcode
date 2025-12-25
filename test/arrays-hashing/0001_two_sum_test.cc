@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 
-#include "../../src/arrays-hashing/0001_two_sum.cc"
+#include "0001_two_sum.h"
 
 class TwoSumTest : public ::testing::Test {
 protected:

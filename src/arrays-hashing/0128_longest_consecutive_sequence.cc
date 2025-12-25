@@ -1,11 +1,14 @@
+#pragma once
+
+#include <algorithm>
 #include <unordered_map>
 #include <unordered_set>
 #include <vector>
 
-using std::vector;
+using namespace std;
 
 class Solution {
-public:
+ public:
   // Time: O(n) | Space: O(n)
   // Hashmap with optimization
   int longestConsecutive(vector<int>& nums) {
@@ -13,7 +16,7 @@ public:
       return 0;
     }
 
-    std::unordered_set<int> s(nums.begin(), nums.end());
+    unordered_set<int> s(nums.begin(), nums.end());
     int res = 0;
 
     for (auto& num : s) {
@@ -25,7 +28,7 @@ public:
           length++;
         }
 
-        res = std::max(res, length);
+        res = max(res, length);
       }
     }
 
@@ -39,9 +42,9 @@ public:
       return 0;
     }
 
-    std::unordered_set<int> s(nums.begin(), nums.end());
+    unordered_set<int> s(nums.begin(), nums.end());
     // Map to store the length of consecutive sequence starting from each number
-    std::unordered_map<int, int> m;
+    unordered_map<int, int> m;
     int res = 0;
 
     for (int x : nums) {
@@ -54,7 +57,7 @@ public:
 
       // If y (the next number) already has a cached sequence length, add it to current calculation
       m[x] = (m.contains(y) ? m[y] : 0) + y - x;
-      res = std::max(res, m[x]);
+      res = max(res, m[x]);
     }
 
     return res;

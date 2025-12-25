@@ -1,14 +1,14 @@
+#pragma once
+
 #include <algorithm>
 #include <string>
 #include <unordered_map>
 #include <vector>
 
-using std::string;
-using std::unordered_map;
-using std::vector;
+using namespace std;
 
 class Solution {
-public:
+ public:
   // Time: O(n * k log k) | Space: O(n * k)
   vector<vector<string>> groupAnagrams(vector<string>& strs) {
     unordered_map<string, vector<string>> m;
@@ -44,7 +44,7 @@ public:
       for (int i = 0; i < 26; ++i) {
         if (cnt[i]) {
           k += 'a' + i;
-          k += std::to_string(cnt[i]);
+          k += to_string(cnt[i]);
         }
       }
       m[k].emplace_back(s);
@@ -52,7 +52,7 @@ public:
 
     res.reserve(m.size());
     for (auto& n : m) {
-      res.emplace_back(n.second);
+      res.push_back(n.second);
     }
 
     return res;

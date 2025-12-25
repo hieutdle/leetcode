@@ -2,12 +2,10 @@
 #include <unordered_set>
 #include <vector>
 
-using std::sort;
-using std::unordered_set;
-using std::vector;
+using namespace std;
 
 class Solution {
-public:
+ public:
   // Time: O(n) | Space: O(n)
   bool containsDuplicate(vector<int>& nums) {
     unordered_set<int> s;

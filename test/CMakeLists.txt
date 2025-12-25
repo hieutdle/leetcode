@@ -1,26 +1,45 @@
 include(GoogleTest)
 
-mark_as_advanced(
-    BUILD_GMOCK BUILD_GTEST BUILD_SHARED_LIBS
-    gmock_build_tests gtest_build_samples gtest_build_tests
-    gtest_disable_pthreads gtest_force_shared_crt gtest_hide_internal_symbols
-)
+file(GLOB_RECURSE LEETCODE_TEST_SOURCES "${PROJECT_SOURCE_DIR}/test/*/*test.cc")
 
-set_target_properties(gtest PROPERTIES FOLDER extern)
-set_target_properties(gtest_main PROPERTIES FOLDER extern)
-set_target_properties(gmock PROPERTIES FOLDER extern)
-set_target_properties(gmock_main PROPERTIES FOLDER extern)
+# #####################################################################################################################
+# MAKE TARGETS
+# #####################################################################################################################
 
-macro(package_add_test TESTNAME)
-    # create an executable in which the tests will be stored
-    add_executable(${TESTNAME} ${ARGN})
-    # link the Google test infrastructure, mocking library, and a default main function to
-    # the test executable.  Remove gtest_main if writing your own main function.
-    target_link_libraries(${TESTNAME} gtest gmock gtest_main)
-    # gtest_discover_tests replaces gtest_add_tests,
-    # see https://cmake.org/cmake/help/v3.10/module/GoogleTest.html for more options to pass to it
-    gtest_discover_tests(${TESTNAME})
-    set_target_properties(${TESTNAME} PROPERTIES FOLDER test)
-endmacro()
+# #########################################
+# "make check-tests"
+# #########################################
+add_custom_target(build-tests COMMAND ${CMAKE_CTEST_COMMAND} --show-only)
+add_custom_target(check-tests COMMAND ${CMAKE_CTEST_COMMAND} --verbose)
 
-package_add_test(0001 arrays-hashing/test_0001_two_sum.cc)
+# #########################################
+# "make XYZ_test"
+# #########################################
+foreach (leetcode_test_source ${LEETCODE_TEST_SOURCES})
+    # Create a human readable name.
+    get_filename_component(leetcode_test_filename ${leetcode_test_source} NAME)
+    string(REPLACE ".cc" "" leetcode_test_name ${leetcode_test_filename})
+
+    # Add the test target separately and as part of "make check-tests".
+    add_executable(${leetcode_test_name} EXCLUDE_FROM_ALL ${leetcode_test_source})
+    add_dependencies(build-tests ${leetcode_test_name})
+    add_dependencies(check-tests ${leetcode_test_name})
+
+    gtest_discover_tests(${leetcode_test_name}
+            EXTRA_ARGS
+            --gtest_output=xml:${CMAKE_BINARY_DIR}/test/${leetcode_test_name}.xml
+            --gtest_catch_exceptions=0
+            DISCOVERY_TIMEOUT 120
+            PROPERTIES
+            TIMEOUT 120
+            )
+
+    target_link_libraries(${leetcode_test_name} gtest gmock_main)
+
+    # Set test target properties and dependencies.
+    set_target_properties(${leetcode_test_name}
+            PROPERTIES
+            RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/test"
+            COMMAND ${leetcode_test_name}
+            )
+endforeach ()

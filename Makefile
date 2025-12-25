@@ -1,33 +1,36 @@
-VCPKG_ROOT ?= $(shell vcpkg root 2>/dev/null || echo "")
-VCPKG_TOOLCHAIN ?= $(if $(VCPKG_ROOT),$(VCPKG_ROOT)/scripts/buildsystems/vcpkg.cmake,)
+# 1. Define defaults so the Makefile doesn't break
+BUILD_DIR ?= build
+CMAKE ?= cmake
+MAKE ?= make
 
-.PHONY: build
-build:
-	@mkdir -p build
-	@if [ -n "$(VCPKG_TOOLCHAIN)" ] && [ -f "$(VCPKG_TOOLCHAIN)" ]; then \
-		cd build && cmake .. -DCMAKE_TOOLCHAIN_FILE=$(VCPKG_TOOLCHAIN); \
-	else \
-		echo "Warning: vcpkg toolchain not found. Trying without it..."; \
-		cd build && cmake ..; \
-	fi
-	@cmake --build build
+.PHONY: fmt lint submodule build clean
 
-.PHONY: test
-test: build
-	@cd build && ctest --output-on-failure
-
-.PHONY: test-verbose
-test-verbose: build
-	@cd build && ctest --verbose
-
-.PHONY: compile_commands
-compile_commands: build
-	@ln -sf build/compile_commands.json .
-
-.PHONY: fmt
 fmt:
-	@./scripts/fmt.sh
+	@./scripts/fmt.sh all
 
-.PHONY: lint
 lint:
-	@./scripts/lint.sh
+	@./scripts/lint.sh all
+
+submodule:
+	@git submodule update --init --recursive
+
+# 2. Use CMake's -B and -S flags to avoid 'cd' issues
+build:
+	@$(CMAKE) -S . -B $(BUILD_DIR)
+	@$(CMAKE) --build $(BUILD_DIR)
+
+# 3. Improved catch-all for CMake targets/tests
+# Note: Added a guard to prevent this from catching common files
+%:
+	@if [ -d "$(BUILD_DIR)" ]; then \
+		$(MAKE) -C $(BUILD_DIR) $@; \
+		if [ -x "$(BUILD_DIR)/test/$@" ]; then \
+			echo "Running test $@"; \
+			$(BUILD_DIR)/test/$@; \
+		fi \
+	else \
+		echo "Build directory not found. Run 'make build' first."; \
+	fi
+
+clean:
+	rm -rf $(BUILD_DIR)
