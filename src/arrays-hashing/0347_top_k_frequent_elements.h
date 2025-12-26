@@ -1,3 +1,5 @@
+#pragma once
+
 #include <algorithm>
 #include <functional>
 #include <queue>
@@ -5,6 +7,10 @@
 #include <utility>
 #include <vector>
 
+using std::greater;
+using std::pair;
+using std::priority_queue;
+using std::unordered_map;
 using std::vector;
 
 class Solution {
@@ -13,7 +19,7 @@ class Solution {
   // Bucket Sort
   vector<int> topKFrequent(vector<int>& nums, int k) {
     // Hashmap to store the number as a key, and store the frequency as a value
-    std::unordered_map<int, int> m;
+    unordered_map<int, int> m;
     vector<int> res;
 
     // Loop through the vector
@@ -46,11 +52,11 @@ class Solution {
   // Time: O(n log k) | Space: O(n)
   // Min Heap / Priority Queue
   vector<int> topKFrequent2(vector<int>& nums, int k) {
-    std::unordered_map<int, int> m;
+    unordered_map<int, int> m;
     vector<int> res;
 
-    using pii = std::pair<int, int>;
-    std::priority_queue<pii, vector<pii>, std::greater<pii>> pq;
+    using pii = pair<int, int>;
+    priority_queue<pii, vector<pii>, greater<pii>> pq;
 
     for (auto& num : nums) {
       m[num]++;
@@ -66,34 +72,6 @@ class Solution {
     while (!pq.empty()) {
       res.emplace_back(pq.top().second);
       pq.pop();
-    }
-
-    return res;
-  }
-
-  // Time: O(n log n) | Space: O(n)
-  // Reverse count
-  vector<int> topKFrequent3(vector<int>& nums, int k) {
-    std::unordered_map<int, int> m;
-    vector<int> res;
-
-    for (auto& num : nums) {
-      m[num]++;
-    }
-
-    // Create pairs of {frequency, number} and sort
-    vector<std::pair<int, int>> reverseCount;
-    reverseCount.reserve(m.size());
-    for (auto& [num, count] : m) {
-      reverseCount.emplace_back(count, num);
-    }
-
-    sort(reverseCount.begin(), reverseCount.end());
-
-    // Extract top k numbers
-    res.reserve(k);
-    for (int i = 0; i < k; i++) {
-      res.emplace_back(reverseCount[i].second);
     }
 
     return res;

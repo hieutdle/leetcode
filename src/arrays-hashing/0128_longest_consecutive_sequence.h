@@ -5,7 +5,9 @@
 #include <unordered_set>
 #include <vector>
 
-using namespace std;
+using std::unordered_map;
+using std::unordered_set;
+using std::vector;
 
 class Solution {
  public:
@@ -28,7 +30,7 @@ class Solution {
           length++;
         }
 
-        res = max(res, length);
+        res = std::max(res, length);
       }
     }
 
@@ -57,7 +59,7 @@ class Solution {
 
       // If y (the next number) already has a cached sequence length, add it to current calculation
       m[x] = (m.contains(y) ? m[y] : 0) + y - x;
-      res = max(res, m[x]);
+      res = std::max(res, m[x]);
     }
 
     return res;

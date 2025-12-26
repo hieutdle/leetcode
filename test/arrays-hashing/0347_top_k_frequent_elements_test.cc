@@ -2,10 +2,10 @@
 
 #include <algorithm>
 
-#include "../../src/arrays-hashing/0347_top_k_frequent_elements.cc"
+#include "0347_top_k_frequent_elements.h"
 
 class TopKFrequentElementsTest : public ::testing::Test {
-protected:
+ protected:
   Solution solution;
 
   // Helper to check if result contains expected elements (order may vary)
@@ -20,49 +20,41 @@ protected:
   }
 };
 
-TEST_F(TopKFrequentElementsTest, BasicExample) {
+TEST_F(TopKFrequentElementsTest, TestCase1) {
   std::vector<int> nums = {1, 1, 1, 2, 2, 3};
   int k = 2;
-  auto result = solution.topKFrequent(nums, k);
+
+  auto output = solution.topKFrequent(nums, k);
+  auto output2 = solution.topKFrequent2(nums, k);
+
   std::vector<int> expected = {1, 2};
-  EXPECT_TRUE(containsSameElements(result, expected));
+
+  EXPECT_TRUE(containsSameElements(output, expected));
+  EXPECT_TRUE(containsSameElements(output2, expected));
 }
 
-TEST_F(TopKFrequentElementsTest, SingleElement) {
+TEST_F(TopKFrequentElementsTest, TestCase2) {
   std::vector<int> nums = {1};
   int k = 1;
-  auto result = solution.topKFrequent(nums, k);
-  EXPECT_EQ(result.size(), 1);
-  EXPECT_EQ(result[0], 1);
+
+  auto output = solution.topKFrequent(nums, k);
+  auto output2 = solution.topKFrequent2(nums, k);
+
+  std::vector<int> expected = {1};
+
+  EXPECT_TRUE(containsSameElements(output, expected));
+  EXPECT_TRUE(containsSameElements(output2, expected));
 }
 
-TEST_F(TopKFrequentElementsTest, AllSameFrequency) {
-  std::vector<int> nums = {1, 2, 3, 4};
+TEST_F(TopKFrequentElementsTest, TestCase3) {
+  std::vector<int> nums = {1, 2, 1, 2, 1, 2, 3, 1, 3, 2};
   int k = 2;
-  auto result = solution.topKFrequent(nums, k);
-  EXPECT_EQ(result.size(), 2);
-}
 
-TEST_F(TopKFrequentElementsTest, KEqualsSize) {
-  std::vector<int> nums = {1, 1, 2, 2, 3};
-  int k = 3;
-  auto result = solution.topKFrequent(nums, k);
-  std::vector<int> expected = {1, 2, 3};
-  EXPECT_TRUE(containsSameElements(result, expected));
-}
+  auto output = solution.topKFrequent(nums, k);
+  auto output2 = solution.topKFrequent2(nums, k);
 
-TEST_F(TopKFrequentElementsTest, Method2_BasicExample) {
-  std::vector<int> nums = {1, 1, 1, 2, 2, 3};
-  int k = 2;
-  auto result = solution.topKFrequent2(nums, k);
   std::vector<int> expected = {1, 2};
-  EXPECT_TRUE(containsSameElements(result, expected));
-}
 
-TEST_F(TopKFrequentElementsTest, Method3_BasicExample) {
-  std::vector<int> nums = {1, 1, 1, 2, 2, 3};
-  int k = 2;
-  auto result = solution.topKFrequent3(nums, k);
-  std::vector<int> expected = {1, 2};
-  EXPECT_TRUE(containsSameElements(result, expected));
+  EXPECT_TRUE(containsSameElements(output, expected));
+  EXPECT_TRUE(containsSameElements(output2, expected));
 }

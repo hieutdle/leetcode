@@ -2,10 +2,10 @@
 
 #include <algorithm>
 
-#include "../../src/arrays-hashing/0049_group_anagrams.cc"
+#include "0049_group_anagrams.h"
 
 class GroupAnagramsTest : public ::testing::Test {
-protected:
+ protected:
   Solution solution;
 
   // Helper function to sort the result for comparison
@@ -17,80 +17,42 @@ protected:
   }
 };
 
-TEST_F(GroupAnagramsTest, BasicExample) {
+TEST_F(GroupAnagramsTest, TestCase1) {
   std::vector<std::string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-  auto result = solution.groupAnagrams(strs);
 
-  EXPECT_EQ(result.size(), 3);
+  auto output = solution.groupAnagrams(strs);
+  auto output2 = solution.groupAnagrams2(strs);
 
-  // Sort for comparison
-  sortResult(result);
+  std::vector<std::vector<std::string>> expected = {{"bat"}, {"nat", "tan"}, {"ate", "eat", "tea"}};
 
-  // Check that anagrams are grouped together
-  bool foundEatGroup = false, foundTanGroup = false, foundBatGroup = false;
-  for (const auto& group : result) {
-    if (group.size() == 3) {
-      // Should be eat, tea, ate
-      foundEatGroup = true;
-    } else if (group.size() == 2) {
-      // Should be tan, nat
-      foundTanGroup = true;
-    } else if (group.size() == 1 && group[0] == "bat") {
-      foundBatGroup = true;
-    }
-  }
+  sortResult(output);
+  sortResult(output2);
+  sortResult(expected);
 
-  EXPECT_TRUE(foundEatGroup);
-  EXPECT_TRUE(foundTanGroup);
-  EXPECT_TRUE(foundBatGroup);
+  EXPECT_EQ(output, expected);
+  EXPECT_EQ(output2, expected);
 }
 
-TEST_F(GroupAnagramsTest, EmptyInput) {
-  std::vector<std::string> strs = {};
-  auto result = solution.groupAnagrams(strs);
-  EXPECT_EQ(result.size(), 0);
+TEST_F(GroupAnagramsTest, TestCase2) {
+  std::vector<std::string> strs = {""};
+
+  auto output = solution.groupAnagrams(strs);
+  auto output2 = solution.groupAnagrams2(strs);
+
+  std::vector<std::vector<std::string>> expected = {{""}};
+
+  EXPECT_EQ(output, expected);
+  EXPECT_EQ(output2, expected);
 }
 
-TEST_F(GroupAnagramsTest, SingleString) {
+TEST_F(GroupAnagramsTest, TestCase3) {
   std::vector<std::string> strs = {"a"};
-  auto result = solution.groupAnagrams(strs);
-  EXPECT_EQ(result.size(), 1);
-  EXPECT_EQ(result[0].size(), 1);
-  EXPECT_EQ(result[0][0], "a");
-}
 
-TEST_F(GroupAnagramsTest, NoAnagrams) {
-  std::vector<std::string> strs = {"abc", "def", "ghi"};
-  auto result = solution.groupAnagrams(strs);
-  EXPECT_EQ(result.size(), 3);
-}
+  auto output = solution.groupAnagrams(strs);
+  auto output2 = solution.groupAnagrams2(strs);
 
-TEST_F(GroupAnagramsTest, AllSameAnagrams) {
-  std::vector<std::string> strs = {"abc", "bca", "cab"};
-  auto result = solution.groupAnagrams(strs);
-  EXPECT_EQ(result.size(), 1);
-  EXPECT_EQ(result[0].size(), 3);
-}
+  std::vector<std::vector<std::string>> expected = {{"a"}};
 
-TEST_F(GroupAnagramsTest, Method2_BasicExample) {
-  std::vector<std::string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-  auto result = solution.groupAnagrams2(strs);
-
-  EXPECT_EQ(result.size(), 3);
-  sortResult(result);
-
-  bool foundEatGroup = false, foundTanGroup = false, foundBatGroup = false;
-  for (const auto& group : result) {
-    if (group.size() == 3) {
-      foundEatGroup = true;
-    } else if (group.size() == 2) {
-      foundTanGroup = true;
-    } else if (group.size() == 1 && group[0] == "bat") {
-      foundBatGroup = true;
-    }
-  }
-
-  EXPECT_TRUE(foundEatGroup);
-  EXPECT_TRUE(foundTanGroup);
-  EXPECT_TRUE(foundBatGroup);
+  EXPECT_EQ(output, expected);
+  EXPECT_EQ(output2, expected);
 }

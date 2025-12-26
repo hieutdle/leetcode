@@ -5,7 +5,9 @@
 #include <unordered_map>
 #include <vector>
 
-using namespace std;
+using std::string;
+using std::unordered_map;
+using std::vector;
 
 class Solution {
  public:
@@ -17,7 +19,7 @@ class Solution {
     for (const string& s : strs) {
       // Create a sorted string as key
       string k = s;
-      sort(k.begin(), k.end());
+      std::sort(k.begin(), k.end());
       m[k].emplace_back(s);
     }
 
@@ -44,7 +46,7 @@ class Solution {
       for (int i = 0; i < 26; ++i) {
         if (cnt[i]) {
           k += 'a' + i;
-          k += to_string(cnt[i]);
+          k += std::to_string(cnt[i]);
         }
       }
       m[k].emplace_back(s);

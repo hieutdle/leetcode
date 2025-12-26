@@ -3,7 +3,8 @@
 #include <unordered_map>
 #include <vector>
 
-using namespace std;
+using std::unordered_map;
+using std::vector;
 
 class Solution {
  public:
@@ -19,7 +20,7 @@ class Solution {
       if (m.contains(y)) {
         // Return the index of corresponding number
         // and the index of the current number
-        return {m[x], idx};
+        return {m[y], idx};
       }
       // Otherwise store the number and the index in the map
       m.insert({x, idx});

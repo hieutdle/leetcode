@@ -8,9 +8,10 @@ elif [[ "$unamestr" == 'Linux' ]]; then
 	format_cmd="clang-format -i -style=file '{}'"
 fi
 
+dirs="src|test"
 
 if [ "${1}" = "all" ]; then
-    find src -iname "*.cc" -o -iname "*.h" -o -iname "*.ipp" | xargs -I{} sh -c "${format_cmd}"
+    find src test -iname "*.cc" -o -iname "*.h" -o -iname "*.ipp" | xargs -I{} sh -c "${format_cmd}"
 elif [ "$1" = "modified" ]; then
     # Run on all changed as well as untracked cc/h files, as compared to the current HEAD. Skip deleted files.
     { git diff --diff-filter=d --name-only & git ls-files --others --exclude-standard; } | grep -E "^src.*\.[chi]pp$" | xargs -I{} sh -c "${format_cmd}"
@@ -19,5 +20,5 @@ elif [ "$1" = "staged" ]; then
     git diff --diff-filter=d --cached --name-only | grep -E "^src.*\.[chi]pp$" | xargs -I{} sh -c "${format_cmd}"
 else
     # Run on all changed as well as untracked cc/h files, as compared to the current master. Skip deleted files.
-    { git diff --diff-filter=d --name-only master & git ls-files --others --exclude-standard; } | grep -E "^src.*\.[chi]pp$" | xargs -I{} sh -c "${format_cmd}"
+    { git diff --diff-filter=d --name-only master & git ls-files --others --exclude-standard; } | grep -E "^($dirs).*\.[chi]pp$" | xargs -I{} sh -c "${format_cmd}"
 fi

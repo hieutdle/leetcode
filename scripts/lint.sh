@@ -100,9 +100,10 @@ elif [[ "$unamestr" == 'Linux' ]]; then
     lint_cmd="clang-tidy --use-color -p ./build {}"
 fi
 
+dirs="src|test"
 
 if [ "${1}" = "all" ]; then
-    find src -iname "*.cc" -o -iname "*.h" -o -iname "*.ipp" | parallel "${lint_cmd}"
+    find src test -iname "*.cc" -o -iname "*.h" -o -iname "*.ipp" | parallel "${lint_cmd}"
 elif [ "$1" = "modified" ]; then
     # Run on all changed as well as untracked cc/h files, as compared to the current HEAD. Skip deleted files.
     { git diff --diff-filter=d --name-only & git ls-files --others --exclude-standard; } | grep -E "^src.*\.[chi]pp$" | parallel "${lint_cmd}"
@@ -111,7 +112,7 @@ elif [ "$1" = "staged" ]; then
     git diff --diff-filter=d --cached --name-only | grep -E "^src.*\.[chi]pp$" | parallel "${lint_cmd}"
 else
     # Run on all changed as well as untracked cc/h files, as compared to the current master. Skip deleted files.
-    { git diff --diff-filter=d --name-only master & git ls-files --others --exclude-standard; } | grep -E "^src.*\.[chi]pp$" | parallel --color "${lint_cmd}"
+    { git diff --diff-filter=d --name-only master & git ls-files --others --exclude-standard; } | grep -E "^($dirs).*\.[chi]pp$" | parallel --color "${lint_cmd}"
 fi
 
 exit $exitcode
