@@ -18,8 +18,10 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 # Includes.
 set(ARRAYS_HASHING_DIR ${PROJECT_SOURCE_DIR}/src/arrays-hashing)
+set(TWO_POINTERS_DIR ${PROJECT_SOURCE_DIR}/src/two-pointers)
 
 include_directories(${ARRAYS_HASHING_DIR})
+include_directories(${TWO_POINTERS_DIR})
 include_directories(BEFORE src) # This is needed for gtest.
 
 enable_testing()

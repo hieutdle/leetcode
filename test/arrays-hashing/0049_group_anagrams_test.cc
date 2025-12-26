@@ -19,40 +19,36 @@ class GroupAnagramsTest : public ::testing::Test {
 
 TEST_F(GroupAnagramsTest, TestCase1) {
   std::vector<std::string> strs = {"eat", "tea", "tan", "ate", "nat", "bat"};
-
-  auto output = solution.groupAnagrams(strs);
-  auto output2 = solution.groupAnagrams2(strs);
-
   std::vector<std::vector<std::string>> expected = {{"bat"}, {"nat", "tan"}, {"ate", "eat", "tea"}};
-
-  sortResult(output);
-  sortResult(output2);
   sortResult(expected);
 
+  auto output = solution.groupAnagrams(strs);
+  sortResult(output);
   EXPECT_EQ(output, expected);
+
+  auto output2 = solution.groupAnagrams2(strs);
+  sortResult(output2);
   EXPECT_EQ(output2, expected);
 }
 
 TEST_F(GroupAnagramsTest, TestCase2) {
   std::vector<std::string> strs = {""};
-
-  auto output = solution.groupAnagrams(strs);
-  auto output2 = solution.groupAnagrams2(strs);
-
   std::vector<std::vector<std::string>> expected = {{""}};
 
+  auto output = solution.groupAnagrams(strs);
   EXPECT_EQ(output, expected);
+
+  auto output2 = solution.groupAnagrams2(strs);
   EXPECT_EQ(output2, expected);
 }
 
 TEST_F(GroupAnagramsTest, TestCase3) {
   std::vector<std::string> strs = {"a"};
-
-  auto output = solution.groupAnagrams(strs);
-  auto output2 = solution.groupAnagrams2(strs);
-
   std::vector<std::vector<std::string>> expected = {{"a"}};
 
+  auto output = solution.groupAnagrams(strs);
   EXPECT_EQ(output, expected);
+
+  auto output2 = solution.groupAnagrams2(strs);
   EXPECT_EQ(output2, expected);
 }

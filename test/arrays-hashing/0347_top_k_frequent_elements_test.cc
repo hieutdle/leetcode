@@ -23,38 +23,35 @@ class TopKFrequentElementsTest : public ::testing::Test {
 TEST_F(TopKFrequentElementsTest, TestCase1) {
   std::vector<int> nums = {1, 1, 1, 2, 2, 3};
   int k = 2;
-
-  auto output = solution.topKFrequent(nums, k);
-  auto output2 = solution.topKFrequent2(nums, k);
-
   std::vector<int> expected = {1, 2};
 
+  auto output = solution.topKFrequent(nums, k);
   EXPECT_TRUE(containsSameElements(output, expected));
+
+  auto output2 = solution.topKFrequent2(nums, k);
   EXPECT_TRUE(containsSameElements(output2, expected));
 }
 
 TEST_F(TopKFrequentElementsTest, TestCase2) {
   std::vector<int> nums = {1};
   int k = 1;
-
-  auto output = solution.topKFrequent(nums, k);
-  auto output2 = solution.topKFrequent2(nums, k);
-
   std::vector<int> expected = {1};
 
+  auto output = solution.topKFrequent(nums, k);
   EXPECT_TRUE(containsSameElements(output, expected));
+
+  auto output2 = solution.topKFrequent2(nums, k);
   EXPECT_TRUE(containsSameElements(output2, expected));
 }
 
 TEST_F(TopKFrequentElementsTest, TestCase3) {
   std::vector<int> nums = {1, 2, 1, 2, 1, 2, 3, 1, 3, 2};
   int k = 2;
-
-  auto output = solution.topKFrequent(nums, k);
-  auto output2 = solution.topKFrequent2(nums, k);
-
   std::vector<int> expected = {1, 2};
 
+  auto output = solution.topKFrequent(nums, k);
   EXPECT_TRUE(containsSameElements(output, expected));
+
+  auto output2 = solution.topKFrequent2(nums, k);
   EXPECT_TRUE(containsSameElements(output2, expected));
 }
