@@ -42,4 +42,14 @@ foreach (leetcode_test_source ${LEETCODE_TEST_SOURCES})
             RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/test"
             COMMAND ${leetcode_test_name}
             )
+    # Extract the problem number (e.g., "0076" from "0076_minimum_window_substring_test")
+    string(REGEX MATCH "^[0-9]+" problem_number ${leetcode_test_name})
+    if(problem_number)
+            # Create a short alias target (e.g., "make 0076" just builds)
+            add_custom_target(${problem_number}
+                COMMAND ${CMAKE_BINARY_DIR}/test/${leetcode_test_name}
+                DEPENDS ${leetcode_test_name}
+                COMMENT "Running test ${leetcode_test_name}"
+        )
+    endif()
 endforeach ()
