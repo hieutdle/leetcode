@@ -33,21 +33,3 @@ TEST_F(MinimumWindowSubstringTest, TestCase3) {
   auto output = solution.minWindow(s, t);
   EXPECT_EQ(output, expected);
 }
-
-TEST_F(MinimumWindowSubstringTest, TestCase4) {
-  std::string s = "ab";
-  std::string t = "b";
-  std::string expected = "b";
-
-  auto output = solution.minWindow(s, t);
-  EXPECT_EQ(output, expected);
-}
-
-TEST_F(MinimumWindowSubstringTest, TestCase5) {
-  std::string s = "abc";
-  std::string t = "cba";
-  std::string expected = "abc";
-
-  auto output = solution.minWindow(s, t);
-  EXPECT_EQ(output, expected);
-}

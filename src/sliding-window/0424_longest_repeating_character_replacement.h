@@ -55,8 +55,8 @@ class Solution {
   int characterReplacement2(string s, int k) {
     unordered_map<char, int> count;
     int n = s.size();
-    int maxFreq = 0;  // Max frequency of any character in current window
-    int l = 0;        // Left pointer of the window
+    int maxFreq = 0;
+    int l = 0;
     int res = 0;
 
     for (int r = 0; r < n; ++r) {

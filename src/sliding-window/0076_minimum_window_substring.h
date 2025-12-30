@@ -9,56 +9,46 @@ using std::unordered_map;
 
 class Solution {
  public:
-  // Time: O(m + n) | Space: O(m + n)
+  // Time: O(m + n) | Space: O(128)
   // Where m is the length of s and n is the length of t
-  // Sliding Window
   string minWindow(string s, string t) {
     if (s.empty() || t.empty() || s.size() < t.size()) {
       return "";
     }
 
+    // Number of characters from t still needed to form a valid window.
+    int required = t.length();
+    // Left index of the best window found.
+    int bestLeft = -1;
+    // Length of the best window.
+    int minLength = s.length() + 1;
+
     // Count characters in t
-    unordered_map<char, int> targetCount;
+    unordered_map<char, int> count;
     for (char c : t) {
-      ++targetCount[c];
+      ++count[c];
     }
 
-    // Track characters in current window
-    unordered_map<char, int> windowCount;
-    int required = targetCount.size();  // Number of unique chars in t
-    int formed = 0;                     // Number of unique chars in window with desired frequency
-
-    int l = 0;
-    int minLen = INT_MAX;
-    int minLeft = 0;
-
-    for (int r = 0; r < s.size(); ++r) {
-      char c = s[r];
-      ++windowCount[c];
-
-      // Check if frequency of current character matches desired count in t
-      if (targetCount.contains(c) && windowCount[c] == targetCount[c]) {
-        ++formed;
-      }
-
-      // Try to contract the window until it ceases to be 'desirable'
-      while (l <= r && formed == required) {
-        // Update result if this window is smaller
-        if (r - l + 1 < minLen) {
-          minLen = r - l + 1;
-          minLeft = l;
+    for (int l = 0, r = 0; r < s.length(); ++r) {
+      // If the count is still ≥ 0, then this character is needed.
+      // Reduce the required count.
+      if (--count[s[r]] >= 0)
+        --required;
+      // The window contains all characters of t
+      while (required == 0) {
+        // Update best answer
+        if (r - l + 1 < minLength) {
+          bestLeft = l;
+          minLength = r - l + 1;
         }
-
-        // The character at the left pointer is no longer part of the window
-        char leftChar = s[l];
-        --windowCount[leftChar];
-        if (targetCount.contains(leftChar) && windowCount[leftChar] < targetCount[leftChar]) {
-          --formed;
-        }
-        ++l;
+        // Try removing characters from the left
+        // If it becomes positive, we just removed a required character
+        // window invalid again
+        if (++count[s[l++]] > 0)
+          ++required;
       }
     }
 
-    return minLen == INT_MAX ? "" : s.substr(minLeft, minLen);
+    return bestLeft == -1 ? "" : s.substr(bestLeft, minLength);
   }
 };
