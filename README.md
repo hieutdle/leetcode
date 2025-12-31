@@ -1,5 +1,9 @@
 # leetcode-cpp
 
+> <p style = "color:red"><strong>Please note that:</strong> my solutions are not necessarily optimized for efficiency in terms of time complexity or memory consumption. Instead, my focus is on providing solutions that are clear, and are easy for others to understand and learn from.</p>
+
+I know these problems can be challenging, and I hope these solutions help guide anyone who is struggling to find their own solutions.
+
 ## Progress
 
 **Blind 75: 20/75** (-1 premium, + 0167)
