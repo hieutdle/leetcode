@@ -54,7 +54,7 @@
 | No   | Title                            | Solution                                                                                                   | Difficulty |
 | ---- | -------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
 | 0206 | Reverse Linked List              | <sub><div align='center'>[✔️](src/linked-list/0206_reverse_linked_list.h)</div></sub>                      | Easy       |
-| 0021 | Merge Two Sorted Lists           | <sub><div align='center'>[✔️]](https://leetcode.com/problems/merge-two-sorted-lists/)</div></sub>          | Easy       |
+| 0021 | Merge Two Sorted Lists           | <sub><div align='center'>[✔️](https://leetcode.com/problems/merge-two-sorted-lists/)</div></sub>           | Easy       |
 | 0141 | Linked List Cycle                | <sub><div align='center'>[❌](https://leetcode.com/problems/linked-list-cycle/)</div></sub>                | Easy       |
 | 0143 | Reorder List                     | <sub><div align='center'>[❌](https://leetcode.com/problems/reorder-list/)</div></sub>                     | Medium     |
 | 0019 | Remove Nth Node From End of List | <sub><div align='center'>[❌](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)</div></sub> | Medium     |
