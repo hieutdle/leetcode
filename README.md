@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 23/75** (-1 premium, + 0167)
+**Blind 75: 25/75** (-1 premium, + 0167)
 
 ## Categories
 
@@ -53,7 +53,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0153 | Find Minimum in Rotated Sorted Array | <sub><div align='center'>[✔️](src/binary-search/0153_find_minimum_in_rotated_sorted_array.h)</div></sub> | Medium     |
 | 0033 | Search in Rotated Sorted Array       | <sub><div align='center'>[✔️](src/binary-search/0033_search_in_rotated_sorted_array.h)</div></sub>       | Medium     |
 
-### Linked List (5/6)
+### Linked List (6/6)
 
 | No   | Title                            | Solution                                                                                                   | Difficulty |
 | ---- | -------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
@@ -62,7 +62,13 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0141 | Linked List Cycle                | <sub><div align='center'>[✔️](src/linked-list/0141_linked_list_cycle.h)</div></sub>                        | Easy       |
 | 0143 | Reorder List                     | <sub><div align='center'>[✔️](https://leetcode.com/problems/reorder-list/)</div></sub>                     | Medium     |
 | 0019 | Remove Nth Node From End of List | <sub><div align='center'>[✔️](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)</div></sub> | Medium     |
-| 0023 | Merge k Sorted Lists             | <sub><div align='center'>[❌](https://leetcode.com/problems/merge-k-sorted-lists/)</div></sub>             | Hard       |
+| 0023 | Merge k Sorted Lists             | <sub><div align='center'>[✔️](src/linked-list/0023_merge_k_sorted_lists.h)</div></sub>                     | Hard       |
+
+### Trees (1/1)
+
+| No   | Title               | Solution                                                                       | Difficulty |
+| ---- | ------------------- | ------------------------------------------------------------------------------ | ---------- |
+| 0226 | Invert Binary Tree  | <sub><div align='center'>[✔️](src/trees/0226_invert_binary_tree.h)</div></sub> | Easy       |
 
 ## Project Structure
 
@@ -74,6 +80,7 @@ leetcode-cpp/
 │   ├── linked-list/
 │   ├── sliding-window/
 │   ├── stack/
+│   ├── trees/
 │   └── two-pointers/
 ├── test/                   # Google Test unit tests
 │   ├── arrays-hashing/
@@ -81,6 +88,7 @@ leetcode-cpp/
 │   ├── linked-list/
 │   ├── sliding-window/
 │   ├── stack/
+│   ├── trees/
 │   └── two-pointers/
 ├── third_party/            # External dependencies (Google Test)
 └── scripts/                # Utility scripts (formatting, linting)
