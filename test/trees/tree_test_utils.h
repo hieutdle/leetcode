@@ -1,5 +1,6 @@
 #pragma once
 
+#include <optional>
 #include <queue>
 #include <vector>
 
@@ -7,13 +8,13 @@
 struct TreeNode;
 
 // Helper function to create a binary tree from a level-order vector
-// Use -1 or any negative number to represent null nodes
-inline TreeNode* createTree(const std::vector<int>& values) {
-  if (values.empty() || values[0] < 0) {
+// Use std::nullopt to represent null nodes
+inline TreeNode* createTree(const std::vector<std::optional<int>>& values) {
+  if (values.empty() || !values[0].has_value()) {
     return nullptr;
   }
 
-  TreeNode* root = new TreeNode(values[0]);
+  TreeNode* root = new TreeNode(values[0].value());
   std::queue<TreeNode*> queue;
   queue.push(root);
 
@@ -23,15 +24,15 @@ inline TreeNode* createTree(const std::vector<int>& values) {
     queue.pop();
 
     // Left child
-    if (i < values.size() && values[i] >= 0) {
-      node->left = new TreeNode(values[i]);
+    if (i < values.size() && values[i].has_value()) {
+      node->left = new TreeNode(values[i].value());
       queue.push(node->left);
     }
     i++;
 
     // Right child
-    if (i < values.size() && values[i] >= 0) {
-      node->right = new TreeNode(values[i]);
+    if (i < values.size() && values[i].has_value()) {
+      node->right = new TreeNode(values[i].value());
       queue.push(node->right);
     }
     i++;
@@ -41,9 +42,9 @@ inline TreeNode* createTree(const std::vector<int>& values) {
 }
 
 // Helper function to convert binary tree to level-order vector
-// Use -1 to represent null nodes
-inline std::vector<int> treeToVector(TreeNode* root) {
-  std::vector<int> result;
+// Use std::nullopt to represent null nodes
+inline std::vector<std::optional<int>> treeToVector(TreeNode* root) {
+  std::vector<std::optional<int>> result;
   if (root == nullptr) {
     return result;
   }
@@ -56,7 +57,7 @@ inline std::vector<int> treeToVector(TreeNode* root) {
     queue.pop();
 
     if (node == nullptr) {
-      result.push_back(-1);
+      result.push_back(std::nullopt);
     } else {
       result.push_back(node->val);
       queue.push(node->left);
@@ -64,8 +65,8 @@ inline std::vector<int> treeToVector(TreeNode* root) {
     }
   }
 
-  // Remove trailing -1s
-  while (!result.empty() && result.back() == -1) {
+  // Remove trailing nullopts
+  while (!result.empty() && !result.back().has_value()) {
     result.pop_back();
   }
 
