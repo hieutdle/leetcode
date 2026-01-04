@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 27/75** (-1 premium, + 0167)
+**Blind 75: 29/75** (-1 premium, + 0167)
 
 ## Categories
 
@@ -64,13 +64,15 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0019 | Remove Nth Node From End of List | <sub><div align='center'>[✔️](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)</div></sub> | Medium     |
 | 0023 | Merge k Sorted Lists             | <sub><div align='center'>[✔️](src/linked-list/0023_merge_k_sorted_lists.h)</div></sub>                     | Hard       |
 
-### Trees (3/3)
+### Trees (5/5)
 
-| No   | Title                        | Solution                                                                                 | Difficulty |
-| ---- | ---------------------------- | ---------------------------------------------------------------------------------------- | ---------- |
-| 0104 | Maximum Depth of Binary Tree | <sub><div align='center'>[✔️](src/trees/0104_maximum_depth_of_binary_tree.h)</div></sub> | Easy       |
-| 0100 | Same Tree                    | <sub><div align='center'>[✔️](src/trees/0100_same_tree.h)</div></sub>                    | Easy       |
-| 0226 | Invert Binary Tree           | <sub><div align='center'>[✔️](src/trees/0226_invert_binary_tree.h)</div></sub>           | Easy       |
+| No   | Title                                          | Solution                                                                                                   | Difficulty |
+| ---- | ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
+| 0104 | Maximum Depth of Binary Tree                   | <sub><div align='center'>[✔️](src/trees/0104_maximum_depth_of_binary_tree.h)</div></sub>                   | Easy       |
+| 0100 | Same Tree                                      | <sub><div align='center'>[✔️](src/trees/0100_same_tree.h)</div></sub>                                      | Easy       |
+| 0226 | Invert Binary Tree                             | <sub><div align='center'>[✔️](src/trees/0226_invert_binary_tree.h)</div></sub>                             | Easy       |
+| 0572 | Subtree of Another Tree                        | <sub><div align='center'>[✔️](src/trees/0572_subtree_of_another_tree.h)</div></sub>                        | Easy       |
+| 0235 | Lowest Common Ancestor of a Binary Search Tree | <sub><div align='center'>[✔️](src/trees/0235_lowest_common_ancestor_of_a_binary_search_tree.h)</div></sub> | Medium     |
 
 ## Project Structure
 
