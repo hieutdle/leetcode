@@ -106,8 +106,8 @@ TEST_F(LinkedListCycleTest, FastSlowTestCase1) {
   std::vector<int> values = {3, 2, 0, -4};
   ListNode* head = createListWithCycle(values, 1);
 
-  bool result = solution.hasCycle(head);
-  EXPECT_TRUE(result);
+  bool output = solution.hasCycle(head);
+  EXPECT_TRUE(output);
 
   deleteListWithCycleSafe(head, values, 1);
 }
@@ -118,8 +118,8 @@ TEST_F(LinkedListCycleTest, FastSlowTestCase2) {
   std::vector<int> values = {1, 2};
   ListNode* head = createListWithCycle(values, 0);
 
-  bool result = solution.hasCycle(head);
-  EXPECT_TRUE(result);
+  bool output = solution.hasCycle(head);
+  EXPECT_TRUE(output);
 
   deleteListWithCycleSafe(head, values, 0);
 }
@@ -130,8 +130,8 @@ TEST_F(LinkedListCycleTest, FastSlowTestCase3) {
   std::vector<int> values = {1};
   ListNode* head = createListWithCycle(values, -1);
 
-  bool result = solution.hasCycle(head);
-  EXPECT_FALSE(result);
+  bool output = solution.hasCycle(head);
+  EXPECT_FALSE(output);
 
   deleteListWithCycleSafe(head, values, -1);
 }
@@ -143,8 +143,8 @@ TEST_F(LinkedListCycleTest, HashMapTestCase1) {
   std::vector<int> values = {3, 2, 0, -4};
   ListNode* head = createListWithCycle(values, 1);
 
-  bool result = solution.hasCycle2(head);
-  EXPECT_TRUE(result);
+  bool output = solution.hasCycle2(head);
+  EXPECT_TRUE(output);
 
   deleteListWithCycleSafe(head, values, 1);
 }
@@ -155,8 +155,8 @@ TEST_F(LinkedListCycleTest, HashMapTestCase2) {
   std::vector<int> values = {1, 2};
   ListNode* head = createListWithCycle(values, 0);
 
-  bool result = solution.hasCycle2(head);
-  EXPECT_TRUE(result);
+  bool output = solution.hasCycle2(head);
+  EXPECT_TRUE(output);
 
   deleteListWithCycleSafe(head, values, 0);
 }
@@ -167,8 +167,8 @@ TEST_F(LinkedListCycleTest, HashMapTestCase3) {
   std::vector<int> values = {1};
   ListNode* head = createListWithCycle(values, -1);
 
-  bool result = solution.hasCycle2(head);
-  EXPECT_FALSE(result);
+  bool output = solution.hasCycle2(head);
+  EXPECT_FALSE(output);
 
   deleteListWithCycleSafe(head, values, -1);
 }
