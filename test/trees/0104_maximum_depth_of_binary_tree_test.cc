@@ -8,28 +8,30 @@ class MaximumDepthOfBinaryTreeTest : public ::testing::Test {
   Solution solution;
 };
 
-// Test recursive solution (maxDepth)
-TEST_F(MaximumDepthOfBinaryTreeTest, RecursiveDFSTestCase1) {
+TEST_F(MaximumDepthOfBinaryTreeTest, TestCase1) {
   TreeNode* root = createTree({3, 9, 20, std::nullopt, std::nullopt, 15, 7});
-  EXPECT_EQ(solution.maxDepth(root), 3);
+  int expected = 3;
+
+  /// Test maxDepth (DFS recursive)
+  int output = solution.maxDepth(root);
+  EXPECT_EQ(output, expected);
+
+  // Test maxDepth2 (BFS iterative)
+  int output2 = solution.maxDepth2(root);
+  EXPECT_EQ(output2, expected);
+
   deleteTree(root);
 }
 
-TEST_F(MaximumDepthOfBinaryTreeTest, RecursiveDFSTestCase2) {
+TEST_F(MaximumDepthOfBinaryTreeTest, TestCase2) {
   TreeNode* root = createTree({1, std::nullopt, 2});
-  EXPECT_EQ(solution.maxDepth(root), 2);
-  deleteTree(root);
-}
+  int expected = 2;
 
-// Test iterative BFS solution (maxDepth2)
-TEST_F(MaximumDepthOfBinaryTreeTest, IterativeBFSTestCase1) {
-  TreeNode* root = createTree({3, 9, 20, std::nullopt, std::nullopt, 15, 7});
-  EXPECT_EQ(solution.maxDepth2(root), 3);
-  deleteTree(root);
-}
+  int output = solution.maxDepth(root);
+  EXPECT_EQ(output, expected);
 
-TEST_F(MaximumDepthOfBinaryTreeTest, IterativeBFSTestCase2) {
-  TreeNode* root = createTree({1, std::nullopt, 2});
-  EXPECT_EQ(solution.maxDepth2(root), 2);
+  int output2 = solution.maxDepth2(root);
+  EXPECT_EQ(output2, expected);
+
   deleteTree(root);
 }
