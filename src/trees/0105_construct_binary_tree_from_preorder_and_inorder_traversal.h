@@ -40,7 +40,7 @@ class Solution {
       if (subtreeSize <= 0) {
         return nullptr;
       }
-      
+
       //       3
       //      / \
       //     9  20
