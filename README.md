@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 35/75** (-1 premium, + 0167)
+**Blind 75: 37/75** (-1 premium, + 0167)
 
 ## Categories
 
@@ -66,19 +66,31 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ### Trees (11/11)
 
-| No   | Title                                                      | Solution                                                                                                                   | Difficulty |
-| ---- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ---------- |
-| 0226 | Invert Binary Tree                                         | <sub><div align='center'>[✔️](src/trees/0226_invert_binary_tree.h)</div></sub>                                             | Easy       |
-| 0104 | Maximum Depth of Binary Tree                               | <sub><div align='center'>[✔️](src/trees/0104_maximum_depth_of_binary_tree.h)</div></sub>                                   | Easy       |
-| 0100 | Same Tree                                                  | <sub><div align='center'>[✔️](src/trees/0100_same_tree.h)</div></sub>                                                      | Easy       |
-| 0572 | Subtree of Another Tree                                    | <sub><div align='center'>[✔️](src/trees/0572_subtree_of_another_tree.h)</div></sub>                                        | Easy       |
-| 0235 | Lowest Common Ancestor of a Binary Search Tree             | <sub><div align='center'>[✔️](src/trees/0235_lowest_common_ancestor_of_a_binary_search_tree.h)</div></sub>                 | Medium     |
-| 0102 | Binary Tree Level Order Traversal                          | <sub><div align='center'>[✔️](src/trees/0102_binary_tree_level_order_traversal.h)</div></sub>                              | Medium     |
-| 0098 | Validate Binary Search Tree                                | <sub><div align='center'>[✔️](src/trees/0098_validate_binary_search_tree.h)</div></sub>                                    | Medium     |
-| 0230 | Kth Smallest Element in a BST                              | <sub><div align='center'>[✔️](src/trees/0230_kth_smallest_element_in_a_bst.h)</div></sub>                                  | Medium     |
-| 0105 | Construct Binary Tree from Preorder and Inorder Traversal  | <sub><div align='center'>[✔️](src/trees/0105_construct_binary_tree_from_preorder_and_inorder_traversal.h)</div></sub>      | Medium     |
-| 0124 | Binary Tree Maximum Path Sum                               | <sub><div align='center'>[✔️](src/trees/0124_binary_tree_maximum_path_sum.h)</div></sub>                                   | Hard       |
-| 0297 | Serialize and Deserialize Binary Tree                      | <sub><div align='center'>[✔️](src/trees/0297_serialize_and_deserialize_binary_tree.h)</div></sub>                          | Hard       |
+| No   | Title                                                     | Solution                                                                                                              | Difficulty |
+| ---- | --------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------- | ---------- |
+| 0226 | Invert Binary Tree                                        | <sub><div align='center'>[✔️](src/trees/0226_invert_binary_tree.h)</div></sub>                                        | Easy       |
+| 0104 | Maximum Depth of Binary Tree                              | <sub><div align='center'>[✔️](src/trees/0104_maximum_depth_of_binary_tree.h)</div></sub>                              | Easy       |
+| 0100 | Same Tree                                                 | <sub><div align='center'>[✔️](src/trees/0100_same_tree.h)</div></sub>                                                 | Easy       |
+| 0572 | Subtree of Another Tree                                   | <sub><div align='center'>[✔️](src/trees/0572_subtree_of_another_tree.h)</div></sub>                                   | Easy       |
+| 0235 | Lowest Common Ancestor of a Binary Search Tree            | <sub><div align='center'>[✔️](src/trees/0235_lowest_common_ancestor_of_a_binary_search_tree.h)</div></sub>            | Medium     |
+| 0102 | Binary Tree Level Order Traversal                         | <sub><div align='center'>[✔️](src/trees/0102_binary_tree_level_order_traversal.h)</div></sub>                         | Medium     |
+| 0098 | Validate Binary Search Tree                               | <sub><div align='center'>[✔️](src/trees/0098_validate_binary_search_tree.h)</div></sub>                               | Medium     |
+| 0230 | Kth Smallest Element in a BST                             | <sub><div align='center'>[✔️](src/trees/0230_kth_smallest_element_in_a_bst.h)</div></sub>                             | Medium     |
+| 0105 | Construct Binary Tree from Preorder and Inorder Traversal | <sub><div align='center'>[✔️](src/trees/0105_construct_binary_tree_from_preorder_and_inorder_traversal.h)</div></sub> | Medium     |
+| 0124 | Binary Tree Maximum Path Sum                              | <sub><div align='center'>[✔️](src/trees/0124_binary_tree_maximum_path_sum.h)</div></sub>                              | Hard       |
+| 0297 | Serialize and Deserialize Binary Tree                     | <sub><div align='center'>[✔️](src/trees/0297_serialize_and_deserialize_binary_tree.h)</div></sub>                     | Hard       |
+
+### Heap / Priority Queue (1/1)
+
+| No   | Title                        | Solution                                                                                               | Difficulty |
+| ---- | ---------------------------- | ------------------------------------------------------------------------------------------------------ | ---------- |
+| 0295 | Find Median from Data Stream | <sub><div align='center'>[✔️](src/heap-priority-queue/0295_find_median_from_data_stream.h)</div></sub> | Hard       |
+
+### Backtracking (1/1)
+
+| No   | Title           | Solution                                                                           | Difficulty |
+| ---- | --------------- | ---------------------------------------------------------------------------------- | ---------- |
+| 0039 | Combination Sum | <sub><div align='center'>[✔️](src/backtracking/0039_combination_sum.h)</div></sub> | Medium     |
 
 ## Project Structure
 
@@ -86,7 +98,9 @@ I know these problems can be challenging, and I hope these solutions help guide 
 leetcode-cpp/
 ├── src/                    # Solution implementations (header files)
 │   ├── arrays-hashing/
+│   ├── backtracking/
 │   ├── binary-search/
+│   ├── heap-priority-queue/
 │   ├── linked-list/
 │   ├── sliding-window/
 │   ├── stack/
@@ -94,7 +108,9 @@ leetcode-cpp/
 │   └── two-pointers/
 ├── test/                   # Google Test unit tests
 │   ├── arrays-hashing/
+│   ├── backtracking/
 │   ├── binary-search/
+│   ├── heap-priority-queue/
 │   ├── linked-list/
 │   ├── sliding-window/
 │   ├── stack/
