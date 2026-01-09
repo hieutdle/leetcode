@@ -26,6 +26,7 @@ set(LINKED_LIST_DIR ${PROJECT_SOURCE_DIR}/src/linked-list)
 set(TREES_DIR ${PROJECT_SOURCE_DIR}/src/trees)
 set(BACKTRACKING_DIR ${PROJECT_SOURCE_DIR}/src/backtracking)
 set(HEAP_PRIORITY_QUEUE_DIR ${PROJECT_SOURCE_DIR}/src/heap-priority-queue)
+set(TRIES_DIR ${PROJECT_SOURCE_DIR}/src/tries)
 
 
 include_directories(${ARRAYS_HASHING_DIR})
@@ -37,6 +38,7 @@ include_directories(${LINKED_LIST_DIR})
 include_directories(${TREES_DIR})
 include_directories(${BACKTRACKING_DIR})
 include_directories(${HEAP_PRIORITY_QUEUE_DIR})
+include_directories(${TRIES_DIR})
 include_directories(BEFORE src) # This is needed for gtest.
 
 enable_testing()

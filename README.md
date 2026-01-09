@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 37/75** (-1 premium, + 0167)
+**Blind 75: 39/75** (-1 premium, + 0167)
 
 ## Categories
 
@@ -86,11 +86,18 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | ---- | ---------------------------- | ------------------------------------------------------------------------------------------------------ | ---------- |
 | 0295 | Find Median from Data Stream | <sub><div align='center'>[✔️](src/heap-priority-queue/0295_find_median_from_data_stream.h)</div></sub> | Hard       |
 
-### Backtracking (1/1)
+### Backtracking (2/2)
 
 | No   | Title           | Solution                                                                           | Difficulty |
 | ---- | --------------- | ---------------------------------------------------------------------------------- | ---------- |
 | 0039 | Combination Sum | <sub><div align='center'>[✔️](src/backtracking/0039_combination_sum.h)</div></sub> | Medium     |
+| 0079 | Word Search     | <sub><div align='center'>[✔️](src/backtracking/0079_word_search.h)</div></sub>     | Medium     |
+
+### Tries (1/1)
+
+| No   | Title          | Solution                                                                      | Difficulty |
+| ---- | -------------- | ----------------------------------------------------------------------------- | ---------- |
+| 0208 | Implement Trie | <sub><div align='center'>[✔️](src/tries/0208_implement_trie.h)</div></sub>    | Medium     |
 
 ## Project Structure
 
@@ -105,6 +112,7 @@ leetcode-cpp/
 │   ├── sliding-window/
 │   ├── stack/
 │   ├── trees/
+│   ├── tries/
 │   └── two-pointers/
 ├── test/                   # Google Test unit tests
 │   ├── arrays-hashing/
@@ -115,6 +123,7 @@ leetcode-cpp/
 │   ├── sliding-window/
 │   ├── stack/
 │   ├── trees/
+│   ├── tries/
 │   └── two-pointers/
 ├── third_party/            # External dependencies (Google Test)
 └── scripts/                # Utility scripts (formatting, linting)
