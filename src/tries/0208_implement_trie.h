@@ -43,13 +43,13 @@ class Trie {
     node->is_end_of_word = true;
   }
 
-  // Time: O(n) where n is the length of the word | Space: O(1)
+  // Time: O(n) | Space: O(1)
   // Returns true if the word is in the trie
   bool search(string word) {
     TrieNode* node = root;
     for (char c : word) {
       // If character doesn't exist, word is not in trie
-      if (node->children.find(c) == node->children.end()) {
+      if (!node->children.contains(c)) {
         return false;
       }
       // Move to the next node
@@ -59,14 +59,14 @@ class Trie {
     return node->is_end_of_word;
   }
 
-  // Time: O(n) where n is the length of the prefix | Space: O(1)
+  // Time: O(n) | Space: O(1)
   // Returns true if there is any word in the trie that starts with the given
   // prefix
   bool startsWith(string prefix) {
     TrieNode* node = root;
     for (char c : prefix) {
       // If character doesn't exist, no word with this prefix
-      if (node->children.find(c) == node->children.end()) {
+      if (!node->children.contains(c)) {
         return false;
       }
       // Move to the next node
@@ -74,22 +74,6 @@ class Trie {
     }
     // If we've traversed the entire prefix, it exists
     return true;
-  }
-
-  // Destructor to free memory
-  ~Trie() {
-    deleteTrie(root);
-  }
-
- private:
-  // Helper function to recursively delete all nodes
-  void deleteTrie(TrieNode* node) {
-    if (!node)
-      return;
-    for (auto& pair : node->children) {
-      deleteTrie(pair.second);
-    }
-    delete node;
   }
 };
 

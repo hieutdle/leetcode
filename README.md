@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 39/75** (-1 premium, + 0167)
+**Blind 75: 41/75** (-1 premium, + 0167)
 
 ## Categories
 
@@ -93,11 +93,13 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0039 | Combination Sum | <sub><div align='center'>[✔️](src/backtracking/0039_combination_sum.h)</div></sub> | Medium     |
 | 0079 | Word Search     | <sub><div align='center'>[✔️](src/backtracking/0079_word_search.h)</div></sub>     | Medium     |
 
-### Tries (1/1)
+### Tries (3/3)
 
-| No   | Title          | Solution                                                                      | Difficulty |
-| ---- | -------------- | ----------------------------------------------------------------------------- | ---------- |
-| 0208 | Implement Trie | <sub><div align='center'>[✔️](src/tries/0208_implement_trie.h)</div></sub>    | Medium     |
+| No   | Title                                           | Solution                                                                                                        | Difficulty |
+| ---- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------- |
+| 0208 | Implement Trie                                  | <sub><div align='center'>[✔️](src/tries/0208_implement_trie.h)</div></sub>                                      | Medium     |
+| 0211 | Design Add and Search Words Data Structure      | <sub><div align='center'>[✔️](src/tries/0211_design_add_and_search_words_data_structure.h)</div></sub>          | Medium     |
+| 0212 | Word Search II                                  | <sub><div align='center'>[✔️](src/tries/0212_word_search_ii.h)</div></sub>                                      | Hard       |
 
 ## Project Structure
 
