@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 41/75** (-1 premium, + 0167)
+**Blind 75: 43/75** (-1 premium, + 0167)
 
 ## Categories
 
@@ -101,6 +101,13 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0211 | Design Add and Search Words Data Structure      | <sub><div align='center'>[✔️](src/tries/0211_design_add_and_search_words_data_structure.h)</div></sub>          | Medium     |
 | 0212 | Word Search II                                  | <sub><div align='center'>[✔️](src/tries/0212_word_search_ii.h)</div></sub>                                      | Hard       |
 
+### Graphs (2/2)
+
+| No   | Title             | Solution                                                                           | Difficulty |
+| ---- | ----------------- | ---------------------------------------------------------------------------------- | ---------- |
+| 0133 | Clone Graph       | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>           | Medium     |
+| 0200 | Number of Islands | <sub><div align='center'>[✔️](src/graphs/0200_number_of_islands.h)</div></sub>     | Medium     |
+
 ## Project Structure
 
 ```
@@ -109,6 +116,7 @@ leetcode-cpp/
 │   ├── arrays-hashing/
 │   ├── backtracking/
 │   ├── binary-search/
+│   ├── graphs/
 │   ├── heap-priority-queue/
 │   ├── linked-list/
 │   ├── sliding-window/
@@ -120,6 +128,7 @@ leetcode-cpp/
 │   ├── arrays-hashing/
 │   ├── backtracking/
 │   ├── binary-search/
+│   ├── graphs/
 │   ├── heap-priority-queue/
 │   ├── linked-list/
 │   ├── sliding-window/
