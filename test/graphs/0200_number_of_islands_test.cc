@@ -16,6 +16,9 @@ TEST_F(NumberOfIslandsTest, TestCase1) {
 
   int output = solution.numIslands(grid);
   EXPECT_EQ(output, expected);
+
+  int output2 = solution.numIslands2(grid);
+  EXPECT_EQ(output2, 0);
 }
 
 TEST_F(NumberOfIslandsTest, TestCase2) {
@@ -25,4 +28,7 @@ TEST_F(NumberOfIslandsTest, TestCase2) {
 
   int output = solution.numIslands(grid);
   EXPECT_EQ(output, expected);
+
+  int output2 = solution.numIslands2(grid);
+  EXPECT_EQ(output2, 0);
 }
