@@ -34,18 +34,50 @@ class Solution {
  public:
   // Time: O(n + e) | Space: O(n)
   // where n is number of nodes, e is number of edges
-  // BFS approach with hashmap to track cloned nodes
+  // DFS recursive approach with hashmap to track cloned nodes
   Node* cloneGraph(Node* node) {
     if (node == nullptr) {
       return nullptr;
     }
 
+    unordered_map<Node*, Node*> m;
+
+    // Lambda function for DFS traversal
+    auto dfs = [&](this auto&& dfs, Node* curr) -> Node* {
+      // If we've already cloned this node, return the clone
+      if (m.contains(curr)) {
+        return m[curr];
+      }
+
+      // Create a new clone for this node
+      Node* clone = new Node(curr->val);
+      m[curr] = clone;
+
+      // Recursively clone all neighbors
+      for (Node* neighbor : curr->neighbors) {
+        clone->neighbors.push_back(dfs(neighbor));
+      }
+
+      return clone;
+    };
+
+    return dfs(node);
+  }
+
+  // Time: O(n + e) | Space: O(n)
+  // where n is number of nodes, e is number of edges
+  // BFS approach with hashmap to track cloned nodes
+  Node* cloneGraph2(Node* node) {
+    if (node == nullptr) {
+      return nullptr;
+    }
+
     // Map from original node to cloned node
-    unordered_map<Node*, Node*> cloned;
+    unordered_map<Node*, Node*> m;
 
     // Create clone of the starting node
     Node* clone = new Node(node->val);
-    cloned[node] = clone;
+    m[node] = clone;
 
     // BFS to traverse all nodes
     queue<Node*> q;
@@ -58,13 +90,13 @@ class Solution {
       // Process all neighbors
       for (Node* neighbor : curr->neighbors) {
         // If neighbor hasn't been cloned yet, clone it
-        if (cloned.find(neighbor) == cloned.end()) {
-          cloned[neighbor] = new Node(neighbor->val);
+        if (!m.contains(neighbor)) {
+          m[neighbor] = new Node(neighbor->val);
           q.push(neighbor);
         }
 
         // Add the cloned neighbor to the current cloned node's neighbors
-        cloned[curr]->neighbors.push_back(cloned[neighbor]);
+        m[curr]->neighbors.push_back(m[neighbor]);
       }
     }
 

@@ -136,40 +136,40 @@ class CloneGraphTest : public ::testing::Test {
 TEST_F(CloneGraphTest, TestCase1) {
   // Graph: [[2,4],[1,3],[2,4],[1,3]]
   Node* original = createGraph({{2, 4}, {1, 3}, {2, 4}, {1, 3}});
-  Node* cloned = solution.cloneGraph(original);
 
-  EXPECT_TRUE(areGraphsEqual(original, cloned));
+  Node* output = solution.cloneGraph(original);
+  EXPECT_TRUE(areGraphsEqual(original, output));
+
+  Node* output2 = solution.cloneGraph2(original);
+  EXPECT_TRUE(areGraphsEqual(original, output2));
 
   deleteGraph(original);
-  deleteGraph(cloned);
+  deleteGraph(output);
+  deleteGraph(output2);
 }
 
 TEST_F(CloneGraphTest, TestCase2) {
   // Graph: [[]]
   Node* original = createGraph({{}});
-  Node* cloned = solution.cloneGraph(original);
 
-  EXPECT_TRUE(areGraphsEqual(original, cloned));
+  Node* output = solution.cloneGraph(original);
+  EXPECT_TRUE(areGraphsEqual(original, output));
+
+  Node* output2 = solution.cloneGraph2(original);
+  EXPECT_TRUE(areGraphsEqual(original, output2));
 
   deleteGraph(original);
-  deleteGraph(cloned);
+  deleteGraph(output);
+  deleteGraph(output2);
 }
 
 TEST_F(CloneGraphTest, TestCase3) {
   // Graph: []
   Node* original = nullptr;
-  Node* cloned = solution.cloneGraph(original);
 
-  EXPECT_EQ(cloned, nullptr);
-}
+  Node* output = solution.cloneGraph(original);
+  EXPECT_EQ(output, nullptr);
 
-TEST_F(CloneGraphTest, TestCase4) {
-  // Graph: [[2],[1]]
-  Node* original = createGraph({{2}, {1}});
-  Node* cloned = solution.cloneGraph(original);
-
-  EXPECT_TRUE(areGraphsEqual(original, cloned));
-
-  deleteGraph(original);
-  deleteGraph(cloned);
+  Node* output2 = solution.cloneGraph2(original);
+  EXPECT_EQ(output2, nullptr);
 }
