@@ -26,11 +26,13 @@ class Solution {
     // Track in-degree (number of prerequisites) for each course
     vector<int> indegree(numCourses, 0);
 
-    // Populate graph and indegree array
+    // Build the graph and calculate in-degrees
     for (const auto& prereq : prerequisites) {
       int course = prereq[0];
       int prerequisite = prereq[1];
+      // Add edge from prerequisite to course
       m[prerequisite].push_back(course);
+      // Increment in-degree for the course
       indegree[course]++;
     }
 
@@ -42,6 +44,8 @@ class Solution {
       }
     }
 
+    int completed = 0;
+
     // Process courses using topological sort (Kahn's algorithm)
     while (!q.empty()) {
       // Take a course with no remaining prerequisites
@@ -49,105 +53,62 @@ class Solution {
       q.pop();
 
       // Mark this course as completed
+      completed++;
 
       // For each course that depends on the current course
       for (int dependent : m[course]) {
         // Reduce indegree for dependent courses
         indegree[dependent]--;
-        // If indegree becomes 0, add to queue to consider next
+        // If all prerequisites are met (in-degree = 0), add to queue
         if (indegree[dependent] == 0) {
           q.push(dependent);
         }
       }
     }
 
-    bool canFinish(int numCourses, vector<vector<int>>& prerequisites) {
-      // Build the graph
-      unordered_map<int, vector<int>> m;
-      // Track in-degree (number of prerequisites) for each course
-      vector<int> indegree(numCourses, 0);
+    // If all courses were processed, no cycle exists
+    return completed == numCourses;
+  }
 
-      // Populate graph and indegree array
-      for (const auto& prereq : prerequisites) {
-        int course = prereq[0];
-        int prerequisite = prereq[1];
-        m[prerequisite].push_back(course);
-        indegree[course]++;
-      }
-
-      // Initialize queue with all courses that have no prerequisites (in-degree = 0)
-      queue<int> q;
-      for (int i = 0; i < numCourses; ++i) {
-        if (indegree[i] == 0) {
-          q.push(i);
-        }
-      }
-
-      int completed = 0
-
-          // Process courses using topological sort (Kahn's algorithm)
-          while (!q.empty()) {
-        // Take a course with no remaining prerequisites
-        int course = q.front();
-        q.pop();
-
-        // Mark this course as completed
-        completed++;
-
-        // For each course that depends on the current course
-        for (int dependent : m[course]) {
-          // Reduce indegree for dependent courses
-          indegree[dependent]--;
-          // If indegree becomes 0, add to queue to consider next
-          if (indegree[dependent] == 0) {
-            q.push(dependent);
-          }
-        }
-      }
-
-      // If all courses were processed, no cycle exists
-      return completed == numCourses;
+  // Time: O(V + E) | Space: O(V + E)
+  // DFS approach for cycle detection
+  bool canFinish2(int numCourses, vector<vector<int>>& prerequisites) {
+    // Map each course to its dependent courses
+    unordered_map<int, vector<int>> m;
+    for (const auto& prereq : prerequisites) {
+      int course = prereq[0];
+      int prerequisite = prereq[1];
+      m[prerequisite].push_back(course);
     }
 
-    // Time: O(V + E) | Space: O(V + E)
-    // DFS approach for cycle detection
-    bool canFinish2(int numCourses, vector<vector<int>>& prerequisites) {
-      // Map each course to its dependent courses
-      unordered_map<int, vector<int>> m;
-      for (const auto& prereq : prerequisites) {
-        int course = prereq[0];
-        int prerequisite = prereq[1];
-        m[prerequisite].push_back(course);
+    // All courses along current DFS path
+    unordered_set<int> visited;
+
+    // DFS to detect cycles
+    std::function<bool(int)> dfs = [&](int course) -> bool {
+      if (visited.contains(course)) {
+        return false;  // Cycle detected
+      }
+      if (!m.contains(course)) {
+        return true;  // No dependencies, can complete
       }
 
-      // All courses along current DFS path
-      unordered_set<int> visited;
-
-      // DFS to detect cycles
-      std::function<bool(int)> dfs = [&](int course) -> bool {
-        if (visited.contains(course)) {
-          return false;  // Cycle detected
-        }
-        if (!m.contains(course)) {
-          return true;  // No dependencies, can complete
-        }
-
-        visited.insert(course);
-        for (int nextCourse : m[course]) {
-          if (!dfs(nextCourse)) {
-            return false;  // Cycle detected in recursion
-          }
-        }
-        visited.erase(course);  // Backtrack
-        m.erase(course);        // Mark course as completed
-        return true;
-      };
-
-      for (int i = 0; i < numCourses; ++i) {
-        if (!dfs(i)) {
-          return false;  // Cycle detected
+      visited.insert(course);
+      for (int nextCourse : m[course]) {
+        if (!dfs(nextCourse)) {
+          return false;  // Cycle detected in recursion
         }
       }
-      return true;  // All courses can be completed
+      visited.erase(course);  // Backtrack
+      m.erase(course);        // Mark course as completed
+      return true;
+    };
+
+    for (int i = 0; i < numCourses; ++i) {
+      if (!dfs(i)) {
+        return false;  // Cycle detected
+      }
     }
-  };
+    return true;  // All courses can be completed
+  }
+};
