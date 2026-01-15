@@ -24,7 +24,11 @@ jobs:
           sudo apt-get install -y cmake build-essential
 
       - name: Build
-        run: make build
+        run: |
+          set -e
+          make build
 
       - name: Run tests
-        run: make check-tests
+        run: |
+          set -e
+          make check-tests
