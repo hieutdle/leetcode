@@ -22,21 +22,21 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install ninja-build -y
-          sudo apt-get install clang-21 clangd-21 libc++-21-dev clang-tools-21 -y
+          sudo apt-get install clang-20 clangd-20 libc++-20-dev clang-tools-20 -y
           python3 -m pip install cmake --break-system-packages
 
       - name: Verify compiler installation
         run: |
-          clang-21 --version
-          clang++-21 --version
+          clang-20 --version
+          clang++-20 --version
 
       - name: Clean build directory
         run: make clean
 
       - name: Build
         env:
-          CC: clang-21
-          CXX: clang++-21
+          CC: clang-20
+          CXX: clang++-20
         run: |
           set -e
           make build
