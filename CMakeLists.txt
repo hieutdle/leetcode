@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.31.6)
+cmake_minimum_required(VERSION 4.2.1)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) # For clang-tidy.
 
