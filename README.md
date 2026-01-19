@@ -6,11 +6,11 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 45/75** (-1 premium, + 0167)
+**Blind 75: 46/76** (+ 0167)
 
 ## Categories
 
-### Array & Hashing (7/7) (-1 premium)
+### Array & Hashing (8/8)
 
 | No   | Title                        | Solution                                                                                          | Difficulty |
 | ---- | ---------------------------- | ------------------------------------------------------------------------------------------------- | ---------- |
@@ -19,6 +19,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0001 | Two Sum                      | <sub><div align='center'>[✔️](src/arrays-hashing/0001_two_sum.h)</div></sub>                      | Easy       |
 | 0049 | Group Anagrams               | <sub><div align='center'>[✔️](src/arrays-hashing/0049_group_anagrams.h)</div></sub>               | Medium     |
 | 0347 | Top K Frequent Elements      | <sub><div align='center'>[✔️](src/arrays-hashing/0347_top_k_frequent_elements.h)</div></sub>      | Medium     |
+| 0271 | Encode and Decode Strings    | <sub><div align='center'>[✔️](src/arrays-hashing/0271_encode_and_decode_strings.h)</div></sub>    | Medium     |
 | 0238 | Product of Array Except Self | <sub><div align='center'>[✔️](src/arrays-hashing/0238_product_of_array_except_self.h)</div></sub> | Medium     |
 | 0128 | Longest Consecutive Sequence | <sub><div align='center'>[✔️](src/arrays-hashing/0128_longest_consecutive_sequence.h)</div></sub> | Medium     |
 
@@ -95,20 +96,20 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ### Tries (3/3)
 
-| No   | Title                                           | Solution                                                                                                        | Difficulty |
-| ---- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------- | ---------- |
-| 0208 | Implement Trie                                  | <sub><div align='center'>[✔️](src/tries/0208_implement_trie.h)</div></sub>                                      | Medium     |
-| 0211 | Design Add and Search Words Data Structure      | <sub><div align='center'>[✔️](src/tries/0211_design_add_and_search_words_data_structure.h)</div></sub>          | Medium     |
-| 0212 | Word Search II                                  | <sub><div align='center'>[✔️](src/tries/0212_word_search_ii.h)</div></sub>                                      | Hard       |
+| No   | Title                                      | Solution                                                                                               | Difficulty |
+| ---- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------ | ---------- |
+| 0208 | Implement Trie                             | <sub><div align='center'>[✔️](src/tries/0208_implement_trie.h)</div></sub>                             | Medium     |
+| 0211 | Design Add and Search Words Data Structure | <sub><div align='center'>[✔️](src/tries/0211_design_add_and_search_words_data_structure.h)</div></sub> | Medium     |
+| 0212 | Word Search II                             | <sub><div align='center'>[✔️](src/tries/0212_word_search_ii.h)</div></sub>                             | Hard       |
 
 ### Graphs (4/4)
 
-| No   | Title                        | Solution                                                                                       | Difficulty |
-| ---- | ---------------------------- | ---------------------------------------------------------------------------------------------- | ---------- |
-| 0133 | Clone Graph                  | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>                       | Medium     |
-| 0200 | Number of Islands            | <sub><div align='center'>[✔️](src/graphs/0200_number_of_islands.h)</div></sub>                 | Medium     |
-| 0207 | Course Schedule              | <sub><div align='center'>[✔️](src/graphs/0207_course_schedule.h)</div></sub>                   | Medium     |
-| 0417 | Pacific Atlantic Water Flow  | <sub><div align='center'>[✔️](src/graphs/0417_pacific_atlantic_water_flow.h)</div></sub>       | Medium     |
+| No   | Title                       | Solution                                                                                 | Difficulty |
+| ---- | --------------------------- | ---------------------------------------------------------------------------------------- | ---------- |
+| 0133 | Clone Graph                 | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>                 | Medium     |
+| 0200 | Number of Islands           | <sub><div align='center'>[✔️](src/graphs/0200_number_of_islands.h)</div></sub>           | Medium     |
+| 0207 | Course Schedule             | <sub><div align='center'>[✔️](src/graphs/0207_course_schedule.h)</div></sub>             | Medium     |
+| 0417 | Pacific Atlantic Water Flow | <sub><div align='center'>[✔️](src/graphs/0417_pacific_atlantic_water_flow.h)</div></sub> | Medium     |
 
 ## Project Structure
 
