@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 46/76** (+ 0167)
+**Blind 75: 47/76** (+ 0167)
 
 ## Categories
 
@@ -102,14 +102,15 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0211 | Design Add and Search Words Data Structure | <sub><div align='center'>[✔️](src/tries/0211_design_add_and_search_words_data_structure.h)</div></sub> | Medium     |
 | 0212 | Word Search II                             | <sub><div align='center'>[✔️](src/tries/0212_word_search_ii.h)</div></sub>                             | Hard       |
 
-### Graphs (4/4)
+### Graphs (5/5)
 
 | No   | Title                       | Solution                                                                                 | Difficulty |
 | ---- | --------------------------- | ---------------------------------------------------------------------------------------- | ---------- |
-| 0133 | Clone Graph                 | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>                 | Medium     |
 | 0200 | Number of Islands           | <sub><div align='center'>[✔️](src/graphs/0200_number_of_islands.h)</div></sub>           | Medium     |
-| 0207 | Course Schedule             | <sub><div align='center'>[✔️](src/graphs/0207_course_schedule.h)</div></sub>             | Medium     |
+| 0133 | Clone Graph                 | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>                 | Medium     |
 | 0417 | Pacific Atlantic Water Flow | <sub><div align='center'>[✔️](src/graphs/0417_pacific_atlantic_water_flow.h)</div></sub> | Medium     |
+| 0207 | Course Schedule             | <sub><div align='center'>[✔️](src/graphs/0207_course_schedule.h)</div></sub>             | Medium     |
+| 0261 | Graph Valid Tree            | <sub><div align='center'>[✔️](src/graphs/0261_graph_valid_tree.h)</div></sub>            | Medium     |
 
 ## Project Structure
 
@@ -147,8 +148,8 @@ leetcode-cpp/
 
 ### Prerequisites
 
-- C++20 compatible compiler (GCC 10+, Clang 10+, or MSVC 2019+)
-- CMake 3.14 or higher
+- C++23 compatible compiler (e.g., GCC 11+, Clang 12+, MSVC 19.29+)
+- CMake 4.2.1 or higher
 - Make (optional, for using Makefile shortcuts)
 
 ### Install Dependencies
