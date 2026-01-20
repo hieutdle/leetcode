@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 47/76** (+ 0167)
+**Blind 75: 48/76** (+ 0167)
 
 ## Categories
 
@@ -102,15 +102,16 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0211 | Design Add and Search Words Data Structure | <sub><div align='center'>[✔️](src/tries/0211_design_add_and_search_words_data_structure.h)</div></sub> | Medium     |
 | 0212 | Word Search II                             | <sub><div align='center'>[✔️](src/tries/0212_word_search_ii.h)</div></sub>                             | Hard       |
 
-### Graphs (5/5)
+### Graphs (6/6)
 
-| No   | Title                       | Solution                                                                                 | Difficulty |
-| ---- | --------------------------- | ---------------------------------------------------------------------------------------- | ---------- |
-| 0200 | Number of Islands           | <sub><div align='center'>[✔️](src/graphs/0200_number_of_islands.h)</div></sub>           | Medium     |
-| 0133 | Clone Graph                 | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>                 | Medium     |
-| 0417 | Pacific Atlantic Water Flow | <sub><div align='center'>[✔️](src/graphs/0417_pacific_atlantic_water_flow.h)</div></sub> | Medium     |
-| 0207 | Course Schedule             | <sub><div align='center'>[✔️](src/graphs/0207_course_schedule.h)</div></sub>             | Medium     |
-| 0261 | Graph Valid Tree            | <sub><div align='center'>[✔️](src/graphs/0261_graph_valid_tree.h)</div></sub>            | Medium     |
+| No   | Title                                              | Solution                                                                                                           | Difficulty |
+| ---- | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ---------- |
+| 0200 | Number of Islands                                  | <sub><div align='center'>[✔️](src/graphs/0200_number_of_islands.h)</div></sub>                                     | Medium     |
+| 0133 | Clone Graph                                        | <sub><div align='center'>[✔️](src/graphs/0133_clone_graph.h)</div></sub>                                           | Medium     |
+| 0417 | Pacific Atlantic Water Flow                        | <sub><div align='center'>[✔️](src/graphs/0417_pacific_atlantic_water_flow.h)</div></sub>                           | Medium     |
+| 0207 | Course Schedule                                    | <sub><div align='center'>[✔️](src/graphs/0207_course_schedule.h)</div></sub>                                       | Medium     |
+| 0261 | Graph Valid Tree                                   | <sub><div align='center'>[✔️](src/graphs/0261_graph_valid_tree.h)</div></sub>                                      | Medium     |
+| 0323 | Number of Connected Components in Undirected Graph | <sub><div align='center'>[✔️](src/graphs/0323_number_of_connected_components_in_an_undirected_graph.h)</div></sub> | Medium     |
 
 ## Project Structure
 
