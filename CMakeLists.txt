@@ -28,6 +28,7 @@ set(BACKTRACKING_DIR ${PROJECT_SOURCE_DIR}/src/backtracking)
 set(HEAP_PRIORITY_QUEUE_DIR ${PROJECT_SOURCE_DIR}/src/heap-priority-queue)
 set(TRIES_DIR ${PROJECT_SOURCE_DIR}/src/tries)
 set(GRAPHS_DIR ${PROJECT_SOURCE_DIR}/src/graphs)
+set(ADVANCED_GRAPHS_DIR ${PROJECT_SOURCE_DIR}/src/advanced-graphs)
 
 
 include_directories(${ARRAYS_HASHING_DIR})
@@ -41,6 +42,7 @@ include_directories(${BACKTRACKING_DIR})
 include_directories(${HEAP_PRIORITY_QUEUE_DIR})
 include_directories(${TRIES_DIR})
 include_directories(${GRAPHS_DIR})
+include_directories(${ADVANCED_GRAPHS_DIR})
 include_directories(BEFORE src) # This is needed for gtest.
 
 enable_testing()

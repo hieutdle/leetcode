@@ -113,11 +113,18 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0261 | Graph Valid Tree                                   | <sub><div align='center'>[✔️](src/graphs/0261_graph_valid_tree.h)</div></sub>                                      | Medium     |
 | 0323 | Number of Connected Components in Undirected Graph | <sub><div align='center'>[✔️](src/graphs/0323_number_of_connected_components_in_an_undirected_graph.h)</div></sub> | Medium     |
 
+### Advanced Graphs (1/1)
+
+| No   | Title            | Solution                                                                               | Difficulty |
+| ---- | ---------------- | -------------------------------------------------------------------------------------- | ---------- |
+| 0269 | Alien Dictionary | <sub><div align='center'>[✔️](src/advanced-graphs/0269_alien_dictionary.h)</div></sub> | Hard       |
+
 ## Project Structure
 
 ```
 leetcode-cpp/
 ├── src/                    # Solution implementations (header files)
+│   ├── advanced-graphs/
 │   ├── arrays-hashing/
 │   ├── backtracking/
 │   ├── binary-search/
@@ -130,6 +137,7 @@ leetcode-cpp/
 │   ├── tries/
 │   └── two-pointers/
 ├── test/                   # Google Test unit tests
+│   ├── advanced-graphs/
 │   ├── arrays-hashing/
 │   ├── backtracking/
 │   ├── binary-search/
