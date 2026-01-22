@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 48/76** (+ 0167)
+**Blind 75: 50/76** (+ 0167)
 
 ## Categories
 
@@ -119,11 +119,19 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | ---- | ---------------- | -------------------------------------------------------------------------------------- | ---------- |
 | 0269 | Alien Dictionary | <sub><div align='center'>[✔️](src/advanced-graphs/0269_alien_dictionary.h)</div></sub> | Hard       |
 
+### 1-D Dynamic Programming (2/2)
+
+| No   | Title           | Solution                                                                                     | Difficulty |
+| ---- | --------------- | -------------------------------------------------------------------------------------------- | ---------- |
+| 0070 | Climbing Stairs | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0070_climbing_stairs.h)</div></sub> | Easy       |
+| 0198 | House Robber    | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0198_house_robber.h)</div></sub>    | Medium     |
+
 ## Project Structure
 
 ```
 leetcode-cpp/
 ├── src/                    # Solution implementations (header files)
+│   ├── 1d-dynamic-programming/
 │   ├── advanced-graphs/
 │   ├── arrays-hashing/
 │   ├── backtracking/
@@ -137,6 +145,7 @@ leetcode-cpp/
 │   ├── tries/
 │   └── two-pointers/
 ├── test/                   # Google Test unit tests
+│   ├── 1d-dynamic-programming/
 │   ├── advanced-graphs/
 │   ├── arrays-hashing/
 │   ├── backtracking/
