@@ -8,6 +8,88 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 **Blind 75: 52/76** (+ 0167)
 
+## Project Structure
+
+```
+leetcode-cpp/
+├── src/                    # Solution implementations (header files)
+│   ├── 1d-dynamic-programming/
+│   ├── advanced-graphs/
+│   ├── arrays-hashing/
+│   ├── backtracking/
+│   ├── binary-search/
+│   ├── graphs/
+│   ├── heap-priority-queue/
+│   ├── linked-list/
+│   ├── sliding-window/
+│   ├── stack/
+│   ├── trees/
+│   ├── tries/
+│   └── two-pointers/
+├── test/                   # Google Test unit tests
+│   ├── 1d-dynamic-programming/
+│   ├── advanced-graphs/
+│   ├── arrays-hashing/
+│   ├── backtracking/
+│   ├── binary-search/
+│   ├── graphs/
+│   ├── heap-priority-queue/
+│   ├── linked-list/
+│   ├── sliding-window/
+│   ├── stack/
+│   ├── trees/
+│   ├── tries/
+│   └── two-pointers/
+├── third_party/            # External dependencies (Google Test)
+└── scripts/                # Utility scripts (formatting, linting)
+```
+
+## Building and Testing
+
+### Prerequisites
+
+- C++23 compatible compiler (e.g., GCC 11+, Clang 12+, MSVC 19.29+)
+- CMake 4.2.1 or higher
+- Make (optional, for using Makefile shortcuts)
+
+### Install Dependencies
+
+```bash
+./install_dependencies.sh
+```
+
+### Build
+
+```bash
+# Using Make
+make build
+
+# Or using CMake directly
+mkdir -p build
+cd build
+cmake ..
+cmake --build .
+```
+
+### Run Tests
+
+Run a specific test:
+
+```bash
+make 0001_two_sum_test
+make 0001
+```
+
+Run all tests:
+
+```bash
+make check-tests
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
 ## Categories
 
 ### Array & Hashing (8/8)
@@ -126,85 +208,3 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | 0070 | Climbing Stairs | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0070_climbing_stairs.h)</div></sub> | Easy       |
 | 0198 | House Robber    | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0198_house_robber.h)</div></sub>    | Medium     |
 | 0213 | House Robber II | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0213_house_robber_ii.h)</div></sub> | Medium     |
-
-## Project Structure
-
-```
-leetcode-cpp/
-├── src/                    # Solution implementations (header files)
-│   ├── 1d-dynamic-programming/
-│   ├── advanced-graphs/
-│   ├── arrays-hashing/
-│   ├── backtracking/
-│   ├── binary-search/
-│   ├── graphs/
-│   ├── heap-priority-queue/
-│   ├── linked-list/
-│   ├── sliding-window/
-│   ├── stack/
-│   ├── trees/
-│   ├── tries/
-│   └── two-pointers/
-├── test/                   # Google Test unit tests
-│   ├── 1d-dynamic-programming/
-│   ├── advanced-graphs/
-│   ├── arrays-hashing/
-│   ├── backtracking/
-│   ├── binary-search/
-│   ├── graphs/
-│   ├── heap-priority-queue/
-│   ├── linked-list/
-│   ├── sliding-window/
-│   ├── stack/
-│   ├── trees/
-│   ├── tries/
-│   └── two-pointers/
-├── third_party/            # External dependencies (Google Test)
-└── scripts/                # Utility scripts (formatting, linting)
-```
-
-## Building and Testing
-
-### Prerequisites
-
-- C++23 compatible compiler (e.g., GCC 11+, Clang 12+, MSVC 19.29+)
-- CMake 4.2.1 or higher
-- Make (optional, for using Makefile shortcuts)
-
-### Install Dependencies
-
-```bash
-./install_dependencies.sh
-```
-
-### Build
-
-```bash
-# Using Make
-make build
-
-# Or using CMake directly
-mkdir -p build
-cd build
-cmake ..
-cmake --build .
-```
-
-### Run Tests
-
-Run a specific test:
-
-```bash
-make 0001_two_sum_test
-make 0001
-```
-
-Run all tests:
-
-```bash
-make check-tests
-```
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
