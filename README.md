@@ -1,4 +1,4 @@
-# leetcode-cpp
+# leetcode
 
 > <p style = "color:red"><strong>Please note that:</strong> my solutions are not necessarily optimized for efficiency in terms of time complexity or memory consumption. Instead, my focus is on providing solutions that are clear, and are easy for others to understand and learn from.</p>
 
@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 50/76** (+ 0167)
+**Blind 75: 52/76** (+ 0167)
 
 ## Categories
 
@@ -119,12 +119,13 @@ I know these problems can be challenging, and I hope these solutions help guide 
 | ---- | ---------------- | -------------------------------------------------------------------------------------- | ---------- |
 | 0269 | Alien Dictionary | <sub><div align='center'>[✔️](src/advanced-graphs/0269_alien_dictionary.h)</div></sub> | Hard       |
 
-### 1-D Dynamic Programming (2/2)
+### 1-D Dynamic Programming (3/3)
 
 | No   | Title           | Solution                                                                                     | Difficulty |
 | ---- | --------------- | -------------------------------------------------------------------------------------------- | ---------- |
 | 0070 | Climbing Stairs | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0070_climbing_stairs.h)</div></sub> | Easy       |
 | 0198 | House Robber    | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0198_house_robber.h)</div></sub>    | Medium     |
+| 0213 | House Robber II | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0213_house_robber_ii.h)</div></sub> | Medium     |
 
 ## Project Structure
 
