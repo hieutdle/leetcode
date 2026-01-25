@@ -12,6 +12,9 @@ TEST_F(LongestPalindromicSubstringTest, TestCase1) {
   // Both "bab" and "aba" are valid answers
   string output = solution.longestPalindrome(s);
   EXPECT_TRUE(output == "bab" || output == "aba");
+
+  string output2 = solution.longestPalindrome2(s);
+  EXPECT_TRUE(output2 == "bab" || output2 == "aba");
 }
 
 TEST_F(LongestPalindromicSubstringTest, TestCase2) {
@@ -20,4 +23,7 @@ TEST_F(LongestPalindromicSubstringTest, TestCase2) {
 
   string output = solution.longestPalindrome(s);
   EXPECT_EQ(output, expected);
+
+  string output2 = solution.longestPalindrome2(s);
+  EXPECT_EQ(output2, expected);
 }

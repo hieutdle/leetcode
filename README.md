@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 53/76** (+ 0167)
+**Blind 75: 54/76** (+ 0167)
 
 ## Project Structure
 
@@ -201,7 +201,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | ---- | ---------------- | -------------------------------------------------------------------------------------- | ---------- |
 | 0269 | Alien Dictionary | <sub><div align='center'>[✔️](src/advanced-graphs/0269_alien_dictionary.h)</div></sub> | Hard       |
 
-### 1-D Dynamic Programming (4/4)
+### 1-D Dynamic Programming (5/5)
 
 | No   | Title                         | Solution                                                                                                   | Difficulty |
 | ---- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
@@ -209,3 +209,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 0198 | House Robber                  | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0198_house_robber.h)</div></sub>                  | Medium     |
 | 0213 | House Robber II               | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0213_house_robber_ii.h)</div></sub>               | Medium     |
 | 0005 | Longest Palindromic Substring | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0005_longest_palindromic_substring.h)</div></sub> | Medium     |
+| 0647 | Palindromic Substrings        | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0647_palindromic_substrings.h)</div></sub>        | Medium     |
