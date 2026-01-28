@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 58/76** (+ 0167)
+**Blind 75: 60/76**
 
 ## Project Structure
 
@@ -14,6 +14,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 leetcode-cpp/
 ├── src/                    # Solution implementations (header files)
 │   ├── 1d-dynamic-programming/
+│   ├── 2d-dynamic-programming/
 │   ├── advanced-graphs/
 │   ├── arrays-hashing/
 │   ├── backtracking/
@@ -28,6 +29,7 @@ leetcode-cpp/
 │   └── two-pointers/
 ├── test/                   # Google Test unit tests
 │   ├── 1d-dynamic-programming/
+│   ├── 2d-dynamic-programming/
 │   ├── advanced-graphs/
 │   ├── arrays-hashing/
 │   ├── backtracking/
@@ -201,16 +203,23 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | ---- | ---------------- | -------------------------------------------------------------------------------------- | ---------- |
 | 0269 | Alien Dictionary | <sub><div align='center'>[✔️](src/advanced-graphs/0269_alien_dictionary.h)</div></sub> | Hard       |
 
-### 1-D Dynamic Programming (9/9)
+### 1-D Dynamic Programming (10/10)
 
-| No   | Title                         | Solution                                                                                                   | Difficulty |
-| ---- | ----------------------------- | ---------------------------------------------------------------------------------------------------------- | ---------- |
-| 0070 | Climbing Stairs               | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0070_climbing_stairs.h)</div></sub>               | Easy       |
-| 0198 | House Robber                  | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0198_house_robber.h)</div></sub>                  | Medium     |
-| 0213 | House Robber II               | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0213_house_robber_ii.h)</div></sub>               | Medium     |
-| 0005 | Longest Palindromic Substring | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0005_longest_palindromic_substring.h)</div></sub> | Medium     |
-| 0647 | Palindromic Substrings        | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0647_palindromic_substrings.h)</div></sub>        | Medium     |
-| 0091 | Decode Ways                   | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0091_decode_ways.h)</div></sub>                   | Medium     |
-| 0322 | Coin Change                   | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0322_coin_change.h)</div></sub>                   | Medium     |
-| 0152 | Maximum Product Subarray      | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0152_maximum_product_subarray.h)</div></sub>      | Medium     |
-| 0139 | Word Break                    | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0139_word_break.h)</div></sub>                    | Medium     |
+| No   | Title                          | Solution                                                                                                    | Difficulty |
+| ---- | ------------------------------ | ----------------------------------------------------------------------------------------------------------- | ---------- |
+| 0070 | Climbing Stairs                | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0070_climbing_stairs.h)</div></sub>                | Easy       |
+| 0198 | House Robber                   | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0198_house_robber.h)</div></sub>                   | Medium     |
+| 0213 | House Robber II                | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0213_house_robber_ii.h)</div></sub>                | Medium     |
+| 0005 | Longest Palindromic Substring  | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0005_longest_palindromic_substring.h)</div></sub>  | Medium     |
+| 0647 | Palindromic Substrings         | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0647_palindromic_substrings.h)</div></sub>         | Medium     |
+| 0091 | Decode Ways                    | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0091_decode_ways.h)</div></sub>                    | Medium     |
+| 0322 | Coin Change                    | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0322_coin_change.h)</div></sub>                    | Medium     |
+| 0152 | Maximum Product Subarray       | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0152_maximum_product_subarray.h)</div></sub>       | Medium     |
+| 0139 | Word Break                     | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0139_word_break.h)</div></sub>                     | Medium     |
+| 0300 | Longest Increasing Subsequence | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0300_longest_increasing_subsequence.h)</div></sub> | Medium     |
+
+### 2-D Dynamic Programming (1/1)
+
+| No   | Title        | Solution                                                                                  | Difficulty |
+| ---- | ------------ | ----------------------------------------------------------------------------------------- | ---------- |
+| 0062 | Unique Paths | <sub><div align='center'>[✔️](src/2d-dynamic-programming/0062_unique_paths.h)</div></sub> | Medium     |
