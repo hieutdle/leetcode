@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 60/76**
+**Blind 75: 61/76**
 
 ## Project Structure
 
@@ -218,8 +218,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 0139 | Word Break                     | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0139_word_break.h)</div></sub>                     | Medium     |
 | 0300 | Longest Increasing Subsequence | <sub><div align='center'>[✔️](src/1d-dynamic-programming/0300_longest_increasing_subsequence.h)</div></sub> | Medium     |
 
-### 2-D Dynamic Programming (1/1)
+### 2-D Dynamic Programming (2/2)
 
-| No   | Title        | Solution                                                                                  | Difficulty |
-| ---- | ------------ | ----------------------------------------------------------------------------------------- | ---------- |
-| 0062 | Unique Paths | <sub><div align='center'>[✔️](src/2d-dynamic-programming/0062_unique_paths.h)</div></sub> | Medium     |
+| No   | Title                      | Solution                                                                                                | Difficulty |
+| ---- | -------------------------- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| 0062 | Unique Paths               | <sub><div align='center'>[✔️](src/2d-dynamic-programming/0062_unique_paths.h)</div></sub>               | Medium     |
+| 1143 | Longest Common Subsequence | <sub><div align='center'>[✔️](src/2d-dynamic-programming/1143_longest_common_subsequence.h)</div></sub> | Medium     |
