@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 62/76**
+**Blind 75: 63/76**
 
 ## Project Structure
 
@@ -227,8 +227,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 0062 | Unique Paths               | <sub><div align='center'>[✔️](src/2d-dynamic-programming/0062_unique_paths.h)</div></sub>               | Medium     |
 | 1143 | Longest Common Subsequence | <sub><div align='center'>[✔️](src/2d-dynamic-programming/1143_longest_common_subsequence.h)</div></sub> | Medium     |
 
-### Greedy (1/1)
+### Greedy (2/2)
 
 | No   | Title            | Solution                                                                      | Difficulty |
 | ---- | ---------------- | ----------------------------------------------------------------------------- | ---------- |
 | 0053 | Maximum Subarray | <sub><div align='center'>[✔️](src/greedy/0053_maximum_subarray.h)</div></sub> | Medium     |
+| 0055 | Jump Game        | <sub><div align='center'>[✔️](src/greedy/0055_jump_game.h)</div></sub>       | Medium     |
