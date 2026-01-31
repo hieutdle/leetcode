@@ -32,6 +32,7 @@ set(ADVANCED_GRAPHS_DIR ${PROJECT_SOURCE_DIR}/src/advanced-graphs)
 set(ONE_D_DYNAMIC_PROGRAMMING_DIR ${PROJECT_SOURCE_DIR}/src/1d-dynamic-programming)
 set(TWO_D_DYNAMIC_PROGRAMMING_DIR ${PROJECT_SOURCE_DIR}/src/2d-dynamic-programming)
 set(GREEDY_DIR ${PROJECT_SOURCE_DIR}/src/greedy)
+set(INTERVALS_DIR ${PROJECT_SOURCE_DIR}/src/intervals)
 
 
 include_directories(${ARRAYS_HASHING_DIR})
@@ -49,6 +50,7 @@ include_directories(${ADVANCED_GRAPHS_DIR})
 include_directories(${ONE_D_DYNAMIC_PROGRAMMING_DIR})
 include_directories(${TWO_D_DYNAMIC_PROGRAMMING_DIR})
 include_directories(${GREEDY_DIR})
+include_directories(${INTERVALS_DIR})
 include_directories(BEFORE src) # This is needed for gtest.
 
 enable_testing()
