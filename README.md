@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 64/76**
+**Blind 75: 65/76**
 
 ## Project Structure
 
@@ -236,8 +236,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 0053 | Maximum Subarray | <sub><div align='center'>[✔️](src/greedy/0053_maximum_subarray.h)</div></sub> | Medium     |
 | 0055 | Jump Game        | <sub><div align='center'>[✔️](src/greedy/0055_jump_game.h)</div></sub>        | Medium     |
 
-### Intervals (1/1)
+### Intervals (2/2)
 
 | No   | Title           | Solution                                                                        | Difficulty |
 | ---- | --------------- | ------------------------------------------------------------------------------- | ---------- |
 | 0057 | Insert Interval | <sub><div align='center'>[✔️](src/intervals/0057_insert_interval.h)</div></sub> | Medium     |
+| 0056 | Merge Intervals | <sub><div align='center'>[✔️](src/intervals/0056_merge_intervals.h)</div></sub> | Medium     |
