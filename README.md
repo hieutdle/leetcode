@@ -24,6 +24,7 @@ leetcode-cpp/
 │   ├── heap-priority-queue/
 │   ├── intervals/
 │   ├── linked-list/
+│   ├── math-geometry/
 │   ├── sliding-window/
 │   ├── stack/
 │   ├── trees/
@@ -41,6 +42,7 @@ leetcode-cpp/
 │   ├── heap-priority-queue/
 │   ├── intervals/
 │   ├── linked-list/
+│   ├── math-geometry/
 │   ├── sliding-window/
 │   ├── stack/
 │   ├── trees/
@@ -248,8 +250,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### Math & Geometry (3/3)
 
-| No   | Title              | Solution                                                                               | Difficulty |
-| ---- | ------------------ | -------------------------------------------------------------------------------------- | ---------- |
-| 0048 | Rotate Image       | <sub><div align='center'>[✔️](src/math-geometry/0048_rotate_image.h)</div></sub>       | Medium     |
-| 0054 | Spiral Matrix      | <sub><div align='center'>[✔️](src/math-geometry/0054_spiral_matrix.h)</div></sub>      | Medium     |
-| 0073 | Set Matrix Zeroes  | <sub><div align='center'>[✔️](src/math-geometry/0073_set_matrix_zeroes.h)</div></sub>  | Medium     |
+| No   | Title             | Solution                                                                              | Difficulty |
+| ---- | ----------------- | ------------------------------------------------------------------------------------- | ---------- |
+| 0048 | Rotate Image      | <sub><div align='center'>[✔️](src/math-geometry/0048_rotate_image.h)</div></sub>      | Medium     |
+| 0054 | Spiral Matrix     | <sub><div align='center'>[✔️](src/math-geometry/0054_spiral_matrix.h)</div></sub>     | Medium     |
+| 0073 | Set Matrix Zeroes | <sub><div align='center'>[✔️](src/math-geometry/0073_set_matrix_zeroes.h)</div></sub> | Medium     |
