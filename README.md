@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 68/76**
+**Blind 75: 71/76**
 
 ## Project Structure
 
@@ -245,3 +245,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 0435 | Non-overlapping Intervals | <sub><div align='center'>[✔️](src/intervals/0435_non_overlapping_intervals.h)</div></sub> | Medium     |
 | 0252 | Meeting Rooms             | <sub><div align='center'>[✔️](src/intervals/0252_meeting_rooms.h)</div></sub>             | Easy       |
 | 0253 | Meeting Rooms II          | <sub><div align='center'>[✔️](src/intervals/0253_meeting_rooms_ii.h)</div></sub>          | Medium     |
+
+### Math & Geometry (3/3)
+
+| No   | Title              | Solution                                                                               | Difficulty |
+| ---- | ------------------ | -------------------------------------------------------------------------------------- | ---------- |
+| 0048 | Rotate Image       | <sub><div align='center'>[✔️](src/math-geometry/0048_rotate_image.h)</div></sub>       | Medium     |
+| 0054 | Spiral Matrix      | <sub><div align='center'>[✔️](src/math-geometry/0054_spiral_matrix.h)</div></sub>      | Medium     |
+| 0073 | Set Matrix Zeroes  | <sub><div align='center'>[✔️](src/math-geometry/0073_set_matrix_zeroes.h)</div></sub>  | Medium     |
