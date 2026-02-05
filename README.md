@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 71/76**
+**Blind 75: 76/76**
 
 ## Project Structure
 
@@ -235,3 +235,13 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 | 0048 | Rotate Image      | <sub><div align='center'>[✔️](src/math-geometry/0048_rotate_image.h)</div></sub>      | Medium     |
 | 0054 | Spiral Matrix     | <sub><div align='center'>[✔️](src/math-geometry/0054_spiral_matrix.h)</div></sub>     | Medium     |
 | 0073 | Set Matrix Zeroes | <sub><div align='center'>[✔️](src/math-geometry/0073_set_matrix_zeroes.h)</div></sub> | Medium     |
+
+### Bit Manipulation (5/5)
+
+| No   | Title               | Solution                                                                                   | Difficulty |
+| ---- | ------------------- | ------------------------------------------------------------------------------------------ | ---------- |
+| 0191 | Number of 1 Bits    | <sub><div align='center'>[✔️](src/bit-manipulation/0191_number_of_1_bits.h)</div></sub>    | Easy       |
+| 0338 | Counting Bits       | <sub><div align='center'>[✔️](src/bit-manipulation/0338_counting_bits.h)</div></sub>       | Easy       |
+| 0190 | Reverse Bits        | <sub><div align='center'>[✔️](src/bit-manipulation/0190_reverse_bits.h)</div></sub>        | Easy       |
+| 0268 | Missing Number      | <sub><div align='center'>[✔️](src/bit-manipulation/0268_missing_number.h)</div></sub>      | Easy       |
+| 0371 | Sum of Two Integers | <sub><div align='center'>[✔️](src/bit-manipulation/0371_sum_of_two_integers.h)</div></sub> | Medium     |
