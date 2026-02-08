@@ -6,7 +6,7 @@ I know these problems can be challenging, and I hope these solutions help guide 
 
 ## Progress
 
-**Blind 75: 76/250**
+**Blind 75: 80/250**
 
 ## Project Structure
 
@@ -80,14 +80,18 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Categories
 
-### Array & Hashing (8/8)
+### Array & Hashing (12/12)
 
 | No   | Title                        | Solution                                                                                          | Difficulty |
 | ---- | ---------------------------- | ------------------------------------------------------------------------------------------------- | ---------- |
+| 1929 | Concatenation of Array       | <sub><div align='center'>[✔️](src/arrays-hashing/1929_concatenation_of_array.h)</div></sub>       | Easy       |
 | 0217 | Contains Duplicate           | <sub><div align='center'>[✔️](src/arrays-hashing/0217_contains_duplicate.h)</div></sub>           | Easy       |
 | 0242 | Valid Anagram                | <sub><div align='center'>[✔️](src/arrays-hashing/0242_valid_anagram.h)</div></sub>                | Easy       |
 | 0001 | Two Sum                      | <sub><div align='center'>[✔️](src/arrays-hashing/0001_two_sum.h)</div></sub>                      | Easy       |
+| 0014 | Longest Common Prefix        | <sub><div align='center'>[✔️](src/arrays-hashing/0014_longest_common_prefix.h)</div></sub>        | Easy       |
 | 0049 | Group Anagrams               | <sub><div align='center'>[✔️](src/arrays-hashing/0049_group_anagrams.h)</div></sub>               | Medium     |
+| 0027 | Remove Element               | <sub><div align='center'>[✔️](src/arrays-hashing/0027_remove_element.h)</div></sub>               | Easy       |
+| 0169 | Majority Element             | <sub><div align='center'>[✔️](src/arrays-hashing/0169_majority_element.h)</div></sub>             | Easy       |
 | 0347 | Top K Frequent Elements      | <sub><div align='center'>[✔️](src/arrays-hashing/0347_top_k_frequent_elements.h)</div></sub>      | Medium     |
 | 0271 | Encode and Decode Strings    | <sub><div align='center'>[✔️](src/arrays-hashing/0271_encode_and_decode_strings.h)</div></sub>    | Medium     |
 | 0238 | Product of Array Except Self | <sub><div align='center'>[✔️](src/arrays-hashing/0238_product_of_array_except_self.h)</div></sub> | Medium     |
